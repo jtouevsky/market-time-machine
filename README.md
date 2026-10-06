@@ -2,7 +2,7 @@
 
 **Travel to any date in market history and invest using only what was knowable that day.**
 
-![Demo: travelling to Black Monday 1987, buying IBM in the trading terminal, fast-forwarding a year, then jumping to the 1997 web](docs/screenshots/demo.gif)
+![Demo: travelling to the day Lehman Brothers failed (Sept 15, 2008), buying Goldman Sachs at the crash price, then fast-forwarding a year](docs/screenshots/demo.gif)
 
 Type a date (`October 19, 1987`, `the day Lehman failed`, `moon landing`). The app then acts as if that evening is the present. News, prices, economic numbers, sports scores, company profiles, search results and even the interface come from that day. You get a fictional $10,000 to invest, then fast-forward a day, a month or a decade to see what happened.
 
