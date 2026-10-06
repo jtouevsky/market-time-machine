@@ -1,0 +1,5002 @@
+{
+ "generatedAt": "2026-10-02T00:14:02.736Z",
+ "years": [
+  1927,
+  1928,
+  1929,
+  1930,
+  1931,
+  1932,
+  1933,
+  1934,
+  1935,
+  1936,
+  1937,
+  1938,
+  1939,
+  1940,
+  1941,
+  1942,
+  1943,
+  1944,
+  1945,
+  1946,
+  1947,
+  1948,
+  1949,
+  1950,
+  1951,
+  1952,
+  1953,
+  1954,
+  1955,
+  1956,
+  1957,
+  1958,
+  1959,
+  1960,
+  1961,
+  1962,
+  1963,
+  1964,
+  1965,
+  1966,
+  1967,
+  1968,
+  1969,
+  1970,
+  1971,
+  1972,
+  1973,
+  1974,
+  1975,
+  1976,
+  1977,
+  1978,
+  1979,
+  1980,
+  1981,
+  1982,
+  1983,
+  1984,
+  1985,
+  1986,
+  1987,
+  1988,
+  1989,
+  1990,
+  1991,
+  1992,
+  1993,
+  1994,
+  1995,
+  1996,
+  1997,
+  1998,
+  1999,
+  2000,
+  2001,
+  2002,
+  2003,
+  2004,
+  2005,
+  2006,
+  2007,
+  2008,
+  2009,
+  2010,
+  2011,
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "securities": [
+  {
+   "id": "^GSPC",
+   "file": "_GSPC",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1927-12-30",
+     "Standard & Poor's 90 Stock Index"
+    ],
+    [
+     "1957-03-04",
+     "Standard & Poor's 500"
+    ],
+    [
+     "1990-01-01",
+     "S&P 500"
+    ]
+   ],
+   "tickers": [
+    [
+     "1927-12-30",
+     "SPX"
+    ]
+   ],
+   "exchange": [],
+   "first": "1927-12-30",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^DJI",
+   "file": "_DJI",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1992-01-02",
+     "Dow Jones Industrial Average"
+    ]
+   ],
+   "tickers": [
+    [
+     "1992-01-02",
+     "DJIA"
+    ]
+   ],
+   "exchange": [],
+   "first": "1992-01-02",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^IXIC",
+   "file": "_IXIC",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1971-02-05",
+     "NASDAQ Composite"
+    ],
+    [
+     "1990-01-01",
+     "Nasdaq Composite"
+    ]
+   ],
+   "tickers": [
+    [
+     "1971-02-05",
+     "COMP"
+    ]
+   ],
+   "exchange": [],
+   "first": "1971-02-05",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^RUT",
+   "file": "_RUT",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1987-09-10",
+     "Russell 2000"
+    ]
+   ],
+   "tickers": [
+    [
+     "1987-09-10",
+     "RUT"
+    ]
+   ],
+   "exchange": [],
+   "first": "1987-09-10",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^VIX",
+   "file": "_VIX",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1993-01-19",
+     "CBOE Volatility Index"
+    ]
+   ],
+   "tickers": [
+    [
+     "1993-01-19",
+     "VIX"
+    ]
+   ],
+   "exchange": [],
+   "first": "1993-01-19",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^FTSE",
+   "file": "_FTSE",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": true,
+   "names": [
+    [
+     "1984-01-03",
+     "FT-SE 100"
+    ],
+    [
+     "1995-01-01",
+     "FTSE 100"
+    ]
+   ],
+   "tickers": [
+    [
+     "1984-01-03",
+     "UKX"
+    ]
+   ],
+   "exchange": [],
+   "first": "1984-01-03",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^N225",
+   "file": "_N225",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": true,
+   "names": [
+    [
+     "1965-01-05",
+     "Nikkei Dow Jones Average"
+    ],
+    [
+     "1985-05-01",
+     "Nikkei 225"
+    ]
+   ],
+   "tickers": [
+    [
+     "1965-01-05",
+     "N225"
+    ]
+   ],
+   "exchange": [],
+   "first": "1965-01-05",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^GDAXI",
+   "file": "_GDAXI",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": true,
+   "names": [
+    [
+     "1988-07-01",
+     "DAX"
+    ]
+   ],
+   "tickers": [
+    [
+     "1988-07-01",
+     "DAX"
+    ]
+   ],
+   "exchange": [],
+   "first": "1988-07-01",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^HSI",
+   "file": "_HSI",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": true,
+   "names": [
+    [
+     "1986-12-31",
+     "Hang Seng Index"
+    ]
+   ],
+   "tickers": [
+    [
+     "1986-12-31",
+     "HSI"
+    ]
+   ],
+   "exchange": [],
+   "first": "1986-12-31",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "^FCHI",
+   "file": "_FCHI",
+   "kind": "index",
+   "sector": null,
+   "unit": null,
+   "intl": true,
+   "names": [
+    [
+     "1990-03-01",
+     "CAC 40"
+    ]
+   ],
+   "tickers": [
+    [
+     "1990-03-01",
+     "CAC"
+    ]
+   ],
+   "exchange": [],
+   "first": "1990-03-01",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "GC=F",
+   "file": "GC_F",
+   "kind": "commodity",
+   "sector": null,
+   "unit": "$/oz",
+   "intl": false,
+   "names": [
+    [
+     "2000-08-30",
+     "Gold (COMEX)"
+    ]
+   ],
+   "tickers": [
+    [
+     "2000-08-30",
+     "GC"
+    ]
+   ],
+   "exchange": [],
+   "first": "2000-08-30",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "SI=F",
+   "file": "SI_F",
+   "kind": "commodity",
+   "sector": null,
+   "unit": "$/oz",
+   "intl": false,
+   "names": [
+    [
+     "2000-08-30",
+     "Silver (COMEX)"
+    ]
+   ],
+   "tickers": [
+    [
+     "2000-08-30",
+     "SI"
+    ]
+   ],
+   "exchange": [],
+   "first": "2000-08-30",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "CL=F",
+   "file": "CL_F",
+   "kind": "commodity",
+   "sector": null,
+   "unit": "$/bbl",
+   "intl": false,
+   "names": [
+    [
+     "2000-08-23",
+     "Crude Oil (WTI)"
+    ]
+   ],
+   "tickers": [
+    [
+     "2000-08-23",
+     "CL"
+    ]
+   ],
+   "exchange": [],
+   "first": "2000-08-23",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "NG=F",
+   "file": "NG_F",
+   "kind": "commodity",
+   "sector": null,
+   "unit": "$/MMBtu",
+   "intl": false,
+   "names": [
+    [
+     "2000-08-30",
+     "Natural Gas"
+    ]
+   ],
+   "tickers": [
+    [
+     "2000-08-30",
+     "NG"
+    ]
+   ],
+   "exchange": [],
+   "first": "2000-08-30",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "HG=F",
+   "file": "HG_F",
+   "kind": "commodity",
+   "sector": null,
+   "unit": "$/lb",
+   "intl": false,
+   "names": [
+    [
+     "2000-08-30",
+     "Copper"
+    ]
+   ],
+   "tickers": [
+    [
+     "2000-08-30",
+     "HG"
+    ]
+   ],
+   "exchange": [],
+   "first": "2000-08-30",
+   "last": "2026-10-01",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "BTC-USD",
+   "file": "BTC-USD",
+   "kind": "crypto",
+   "sector": null,
+   "unit": "$",
+   "intl": false,
+   "names": [
+    [
+     "2014-09-17",
+     "Bitcoin"
+    ]
+   ],
+   "tickers": [
+    [
+     "2014-09-17",
+     "BTC"
+    ]
+   ],
+   "exchange": [],
+   "first": "2014-09-17",
+   "last": "2026-10-02",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "ETH-USD",
+   "file": "ETH-USD",
+   "kind": "crypto",
+   "sector": null,
+   "unit": "$",
+   "intl": false,
+   "names": [
+    [
+     "2017-11-09",
+     "Ether"
+    ]
+   ],
+   "tickers": [
+    [
+     "2017-11-09",
+     "ETH"
+    ]
+   ],
+   "exchange": [],
+   "first": "2017-11-09",
+   "last": "2026-10-02",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "IBM",
+   "file": "IBM",
+   "kind": "stock",
+   "sector": "Computers",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "International Business Machines"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "IBM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1964-05-18",
+     1.25
+    ],
+    [
+     "1966-05-18",
+     1.5
+    ],
+    [
+     "1968-04-23",
+     2
+    ],
+    [
+     "1973-05-29",
+     1.25
+    ],
+    [
+     "1979-06-01",
+     4
+    ],
+    [
+     "1997-05-28",
+     2
+    ],
+    [
+     "1999-05-27",
+     2
+    ],
+    [
+     "2021-11-04",
+     1.046
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "GE",
+   "file": "GE",
+   "kind": "stock",
+   "sector": "Industrial conglomerate",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "General Electric"
+    ],
+    [
+     "2024-04-02",
+     "GE Aerospace"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "GE"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1971-06-08",
+     2
+    ],
+    [
+     "1983-06-02",
+     2
+    ],
+    [
+     "1987-05-26",
+     2
+    ],
+    [
+     "1994-05-16",
+     2
+    ],
+    [
+     "1997-05-12",
+     2
+    ],
+    [
+     "2000-05-08",
+     3
+    ],
+    [
+     "2019-02-26",
+     1.04
+    ],
+    [
+     "2021-08-02",
+     0.125
+    ],
+    [
+     "2023-01-04",
+     1.281
+    ],
+    [
+     "2024-04-02",
+     1.253
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "KO",
+   "file": "KO",
+   "kind": "stock",
+   "sector": "Beverages",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Coca-Cola Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "KO"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1965-02-19",
+     2
+    ],
+    [
+     "1968-06-03",
+     2
+    ],
+    [
+     "1977-06-01",
+     2
+    ],
+    [
+     "1986-07-01",
+     3
+    ],
+    [
+     "1990-05-14",
+     2
+    ],
+    [
+     "1992-05-12",
+     2
+    ],
+    [
+     "1996-05-13",
+     2
+    ],
+    [
+     "2012-08-13",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "PEP",
+   "file": "PEP",
+   "kind": "stock",
+   "sector": "Beverages & snacks",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Pepsi-Cola Company"
+    ],
+    [
+     "1965-06-08",
+     "PepsiCo"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "PEP"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ],
+    [
+     "2017-12-20",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1977-05-31",
+     3
+    ],
+    [
+     "1986-05-29",
+     3
+    ],
+    [
+     "1990-09-05",
+     3
+    ],
+    [
+     "1996-05-29",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "XOM",
+   "file": "XOM",
+   "kind": "stock",
+   "sector": "Oil",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Standard Oil Co. (New Jersey)"
+    ],
+    [
+     "1972-11-01",
+     "Exxon Corporation"
+    ],
+    [
+     "1999-11-30",
+     "Exxon Mobil"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "J"
+    ],
+    [
+     "1972-11-01",
+     "XON"
+    ],
+    [
+     "1999-12-01",
+     "XOM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1976-07-26",
+     2
+    ],
+    [
+     "1981-06-12",
+     2
+    ],
+    [
+     "1987-09-15",
+     2
+    ],
+    [
+     "1997-04-14",
+     2
+    ],
+    [
+     "2001-07-19",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "CVX",
+   "file": "CVX",
+   "kind": "stock",
+   "sector": "Oil",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Standard Oil Co. of California"
+    ],
+    [
+     "1984-07-01",
+     "Chevron Corporation"
+    ],
+    [
+     "2001-10-10",
+     "ChevronTexaco"
+    ],
+    [
+     "2005-05-09",
+     "Chevron"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "SD"
+    ],
+    [
+     "1984-07-01",
+     "CHV"
+    ],
+    [
+     "2001-10-10",
+     "CVX"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1962-12-17",
+     1.05
+    ],
+    [
+     "1973-12-11",
+     2
+    ],
+    [
+     "1981-03-11",
+     2
+    ],
+    [
+     "1994-06-13",
+     2
+    ],
+    [
+     "2004-09-13",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "COP",
+   "file": "COP",
+   "kind": "stock",
+   "sector": "Oil",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Phillips Petroleum"
+    ],
+    [
+     "2002-08-30",
+     "ConocoPhillips"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "P"
+    ],
+    [
+     "2002-08-30",
+     "COP"
+    ]
+   ],
+   "exchange": [
+    [
+     "1981-12-31",
+     "NYSE"
+    ]
+   ],
+   "first": "1981-12-31",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1985-07-05",
+     3
+    ],
+    [
+     "2005-06-02",
+     2
+    ],
+    [
+     "2012-05-01",
+     1.311791
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "SLB",
+   "file": "SLB",
+   "kind": "stock",
+   "sector": "Oilfield services",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Schlumberger"
+    ]
+   ],
+   "tickers": [
+    [
+     "1981-12-31",
+     "SLB"
+    ]
+   ],
+   "exchange": [
+    [
+     "1981-12-31",
+     "NYSE"
+    ]
+   ],
+   "first": "1981-12-31",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1997-07-14",
+     2
+    ],
+    [
+     "2006-04-10",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "JNJ",
+   "file": "JNJ",
+   "kind": "stock",
+   "sector": "Health care",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Johnson & Johnson"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "JNJ"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1967-06-19",
+     3
+    ],
+    [
+     "1970-05-18",
+     3
+    ],
+    [
+     "1981-05-19",
+     3
+    ],
+    [
+     "1989-05-11",
+     2
+    ],
+    [
+     "1992-06-10",
+     2
+    ],
+    [
+     "1996-06-12",
+     2
+    ],
+    [
+     "2001-06-13",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "PG",
+   "file": "PG",
+   "kind": "stock",
+   "sector": "Consumer goods",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Procter & Gamble"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "PG"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1970-05-19",
+     2
+    ],
+    [
+     "1983-02-22",
+     2
+    ],
+    [
+     "1989-11-20",
+     2
+    ],
+    [
+     "1992-06-15",
+     2
+    ],
+    [
+     "1997-09-22",
+     2
+    ],
+    [
+     "2004-06-21",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MRK",
+   "file": "MRK",
+   "kind": "stock",
+   "sector": "Pharmaceuticals",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Merck & Co."
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "MRK"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1964-05-27",
+     3
+    ],
+    [
+     "1972-06-01",
+     2
+    ],
+    [
+     "1986-05-27",
+     2
+    ],
+    [
+     "1988-05-26",
+     3
+    ],
+    [
+     "1992-05-26",
+     3
+    ],
+    [
+     "1999-02-17",
+     2
+    ],
+    [
+     "2021-06-03",
+     1.048
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "PFE",
+   "file": "PFE",
+   "kind": "stock",
+   "sector": "Pharmaceuticals",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1972-06-01",
+     "Pfizer"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "PFE"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1983-07-01",
+     2
+    ],
+    [
+     "1991-04-01",
+     2
+    ],
+    [
+     "1995-07-03",
+     2
+    ],
+    [
+     "1997-07-01",
+     2
+    ],
+    [
+     "1999-07-01",
+     3
+    ],
+    [
+     "2020-11-17",
+     1.054
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "LLY",
+   "file": "LLY",
+   "kind": "stock",
+   "sector": "Pharmaceuticals",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1970-07-09",
+     "Eli Lilly and Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "LLY"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1986-01-30",
+     2
+    ],
+    [
+     "1989-05-01",
+     2
+    ],
+    [
+     "1995-12-21",
+     2
+    ],
+    [
+     "1997-10-16",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "ABT",
+   "file": "ABT",
+   "kind": "stock",
+   "sector": "Health care",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Abbott Laboratories"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "ABT"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1981-06-01",
+     2
+    ],
+    [
+     "1986-06-02",
+     2
+    ],
+    [
+     "1990-06-01",
+     2
+    ],
+    [
+     "1992-06-01",
+     2
+    ],
+    [
+     "1998-06-01",
+     2
+    ],
+    [
+     "2004-05-03",
+     1.0688328345446771
+    ],
+    [
+     "2013-01-02",
+     2.084201750729471
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "UNH",
+   "file": "UNH",
+   "kind": "stock",
+   "sector": "Health insurance",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1984-10-17",
+     "United HealthCare"
+    ],
+    [
+     "1998-03-01",
+     "UnitedHealth Group"
+    ]
+   ],
+   "tickers": [
+    [
+     "1984-10-17",
+     "UNH"
+    ]
+   ],
+   "exchange": [
+    [
+     "1984-10-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1984-10-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1992-09-16",
+     2
+    ],
+    [
+     "1994-03-11",
+     2
+    ],
+    [
+     "2000-12-26",
+     2
+    ],
+    [
+     "2003-06-19",
+     2
+    ],
+    [
+     "2005-05-31",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MRNA",
+   "file": "MRNA",
+   "kind": "stock",
+   "sector": "Biotechnology",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2018-12-07",
+     "Moderna"
+    ]
+   ],
+   "tickers": [
+    [
+     "2018-12-07",
+     "MRNA"
+    ]
+   ],
+   "exchange": [
+    [
+     "2018-12-07",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2018-12-07",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "DIS",
+   "file": "DIS",
+   "kind": "stock",
+   "sector": "Entertainment",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Walt Disney Productions"
+    ],
+    [
+     "1986-02-06",
+     "Walt Disney Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "DIS"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1962-12-18",
+     1.03
+    ],
+    [
+     "1967-11-16",
+     2
+    ],
+    [
+     "1971-03-01",
+     2
+    ],
+    [
+     "1973-01-16",
+     2
+    ],
+    [
+     "1986-03-06",
+     4
+    ],
+    [
+     "1992-05-18",
+     4
+    ],
+    [
+     "1998-07-10",
+     3
+    ],
+    [
+     "2007-06-13",
+     1.0136847440446022
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "BA",
+   "file": "BA",
+   "kind": "stock",
+   "sector": "Aerospace",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Boeing Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "BA"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1966-05-18",
+     2
+    ],
+    [
+     "1977-09-13",
+     2
+    ],
+    [
+     "1979-04-16",
+     1.5
+    ],
+    [
+     "1980-04-15",
+     1.5
+    ],
+    [
+     "1985-06-10",
+     1.5
+    ],
+    [
+     "1989-06-12",
+     1.5
+    ],
+    [
+     "1990-06-11",
+     1.5
+    ],
+    [
+     "1997-06-09",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "RTX",
+   "file": "RTX",
+   "kind": "stock",
+   "sector": "Aerospace",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "United Aircraft"
+    ],
+    [
+     "1975-04-30",
+     "United Technologies"
+    ],
+    [
+     "2020-04-03",
+     "Raytheon Technologies"
+    ],
+    [
+     "2023-07-17",
+     "RTX Corporation"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "UA"
+    ],
+    [
+     "1975-04-30",
+     "UTX"
+    ],
+    [
+     "2020-04-03",
+     "RTX"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-04-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-04-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1965-11-01",
+     1.5
+    ],
+    [
+     "1976-05-19",
+     2
+    ],
+    [
+     "1984-06-11",
+     2
+    ],
+    [
+     "1996-12-11",
+     2
+    ],
+    [
+     "1999-05-18",
+     2
+    ],
+    [
+     "2005-06-13",
+     2
+    ],
+    [
+     "2020-04-03",
+     1.589
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "CAT",
+   "file": "CAT",
+   "kind": "stock",
+   "sector": "Machinery",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Caterpillar Tractor"
+    ],
+    [
+     "1986-06-02",
+     "Caterpillar Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "CAT"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1964-07-06",
+     2
+    ],
+    [
+     "1976-07-26",
+     1.5
+    ],
+    [
+     "1994-09-06",
+     2
+    ],
+    [
+     "1997-07-14",
+     2
+    ],
+    [
+     "2005-07-14",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "DE",
+   "file": "DE",
+   "kind": "stock",
+   "sector": "Machinery",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1972-06-01",
+     "Deere & Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "DE"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1972-09-22",
+     2
+    ],
+    [
+     "1976-09-22",
+     2
+    ],
+    [
+     "1995-11-29",
+     3
+    ],
+    [
+     "2007-12-04",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MMM",
+   "file": "MMM",
+   "kind": "stock",
+   "sector": "Industrial conglomerate",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1970-01-02",
+     "Minnesota Mining & Manufacturing"
+    ],
+    [
+     "2002-04-08",
+     "3M Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1970-01-02",
+     "MMM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1970-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1970-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1972-06-16",
+     2
+    ],
+    [
+     "1987-06-16",
+     2
+    ],
+    [
+     "1994-04-11",
+     2
+    ],
+    [
+     "2003-09-30",
+     2
+    ],
+    [
+     "2024-04-01",
+     1.196
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "HON",
+   "file": "HON",
+   "kind": "stock",
+   "sector": "Industrial conglomerate",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1999-12-01",
+     "Honeywell International"
+    ]
+   ],
+   "tickers": [
+    [
+     "1999-12-01",
+     "HON"
+    ]
+   ],
+   "exchange": [
+    [
+     "1999-12-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1999-12-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2016-10-03",
+     1.0053282396702523
+    ],
+    [
+     "2018-10-01",
+     1.011
+    ],
+    [
+     "2018-10-29",
+     1.032
+    ],
+    [
+     "2025-10-30",
+     1.061
+    ],
+    [
+     "2026-06-29",
+     0.9535
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "F",
+   "file": "F",
+   "kind": "stock",
+   "sector": "Automobiles",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1972-06-01",
+     "Ford Motor Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "F"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1977-06-27",
+     1.25
+    ],
+    [
+     "1983-12-02",
+     1.5
+    ],
+    [
+     "1986-06-03",
+     1.5
+    ],
+    [
+     "1988-01-13",
+     2
+    ],
+    [
+     "1994-07-06",
+     2
+    ],
+    [
+     "1998-04-08",
+     1.505797319680771
+    ],
+    [
+     "2000-06-29",
+     1.0409076714895389
+    ],
+    [
+     "2000-08-03",
+     1.748175
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "GM",
+   "file": "GM",
+   "kind": "stock",
+   "sector": "Automobiles",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2010-11-18",
+     "General Motors Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "2010-11-18",
+     "GM"
+    ]
+   ],
+   "exchange": [
+    [
+     "2010-11-18",
+     "NYSE"
+    ]
+   ],
+   "first": "2010-11-18",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "TSLA",
+   "file": "TSLA",
+   "kind": "stock",
+   "sector": "Automobiles",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2010-06-29",
+     "Tesla Motors"
+    ],
+    [
+     "2017-02-01",
+     "Tesla, Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "2010-06-29",
+     "TSLA"
+    ]
+   ],
+   "exchange": [
+    [
+     "2010-06-29",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2010-06-29",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2020-08-31",
+     5
+    ],
+    [
+     "2022-08-25",
+     3
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MO",
+   "file": "MO",
+   "kind": "stock",
+   "sector": "Tobacco & food",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Philip Morris"
+    ],
+    [
+     "1985-07-01",
+     "Philip Morris Companies"
+    ],
+    [
+     "2003-01-27",
+     "Altria Group"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "MO"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1966-05-19",
+     3
+    ],
+    [
+     "1969-05-22",
+     2
+    ],
+    [
+     "1974-06-03",
+     2
+    ],
+    [
+     "1979-06-01",
+     2
+    ],
+    [
+     "1986-04-11",
+     2
+    ],
+    [
+     "1989-10-11",
+     4
+    ],
+    [
+     "1997-04-11",
+     3
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MCD",
+   "file": "MCD",
+   "kind": "stock",
+   "sector": "Restaurants",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1966-07-05",
+     "McDonald's Corporation"
+    ]
+   ],
+   "tickers": [
+    [
+     "1966-07-05",
+     "MCD"
+    ]
+   ],
+   "exchange": [
+    [
+     "1966-07-05",
+     "NYSE"
+    ]
+   ],
+   "first": "1966-07-05",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1971-06-14",
+     1.5
+    ],
+    [
+     "1972-06-06",
+     2
+    ],
+    [
+     "1982-10-07",
+     1.5
+    ],
+    [
+     "1984-09-25",
+     1.5
+    ],
+    [
+     "1986-06-26",
+     1.5
+    ],
+    [
+     "1987-06-23",
+     1.5
+    ],
+    [
+     "1989-06-19",
+     2
+    ],
+    [
+     "1994-06-27",
+     2
+    ],
+    [
+     "1999-03-08",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "SBUX",
+   "file": "SBUX",
+   "kind": "stock",
+   "sector": "Restaurants",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1992-06-26",
+     "Starbucks"
+    ]
+   ],
+   "tickers": [
+    [
+     "1992-06-26",
+     "SBUX"
+    ]
+   ],
+   "exchange": [
+    [
+     "1992-06-26",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1992-06-26",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1993-09-30",
+     2
+    ],
+    [
+     "1995-12-04",
+     2
+    ],
+    [
+     "1999-03-22",
+     2
+    ],
+    [
+     "2001-04-30",
+     2
+    ],
+    [
+     "2005-10-24",
+     2
+    ],
+    [
+     "2015-04-09",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "NKE",
+   "file": "NKE",
+   "kind": "stock",
+   "sector": "Apparel",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-12-02",
+     "Nike, Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-12-02",
+     "NKE"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-12-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1980-12-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1990-10-08",
+     2
+    ],
+    [
+     "1995-10-31",
+     2
+    ],
+    [
+     "1996-10-24",
+     2
+    ],
+    [
+     "2007-04-03",
+     2
+    ],
+    [
+     "2012-12-26",
+     2
+    ],
+    [
+     "2015-12-24",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "WMT",
+   "file": "WMT",
+   "kind": "stock",
+   "sector": "Retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1972-08-25",
+     "Wal-Mart Stores"
+    ],
+    [
+     "2018-02-01",
+     "Walmart Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-08-25",
+     "WMT"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-08-25",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-08-25",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1975-08-25",
+     2
+    ],
+    [
+     "1980-12-17",
+     2
+    ],
+    [
+     "1982-07-12",
+     2
+    ],
+    [
+     "1983-07-11",
+     2
+    ],
+    [
+     "1985-10-07",
+     2
+    ],
+    [
+     "1987-07-13",
+     2
+    ],
+    [
+     "1990-07-09",
+     2
+    ],
+    [
+     "1993-02-26",
+     2
+    ],
+    [
+     "1999-04-20",
+     2
+    ],
+    [
+     "2024-02-26",
+     3
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "HD",
+   "file": "HD",
+   "kind": "stock",
+   "sector": "Retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1981-09-22",
+     "Home Depot"
+    ]
+   ],
+   "tickers": [
+    [
+     "1981-09-22",
+     "HD"
+    ]
+   ],
+   "exchange": [
+    [
+     "1981-09-22",
+     "NYSE"
+    ]
+   ],
+   "first": "1981-09-22",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1982-01-20",
+     1.5
+    ],
+    [
+     "1982-05-11",
+     1.25
+    ],
+    [
+     "1982-12-08",
+     2
+    ],
+    [
+     "1983-06-09",
+     2
+    ],
+    [
+     "1987-09-22",
+     1.5
+    ],
+    [
+     "1989-07-03",
+     1.5
+    ],
+    [
+     "1990-07-06",
+     1.5
+    ],
+    [
+     "1991-06-26",
+     1.5
+    ],
+    [
+     "1992-07-02",
+     1.5
+    ],
+    [
+     "1993-04-14",
+     1.3333333333333333
+    ],
+    [
+     "1997-07-07",
+     1.5
+    ],
+    [
+     "1998-07-06",
+     2
+    ],
+    [
+     "1999-12-31",
+     1.5
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "LOW",
+   "file": "LOW",
+   "kind": "stock",
+   "sector": "Retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Lowe's Companies"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "LOW"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1992-06-29",
+     2
+    ],
+    [
+     "1994-04-04",
+     2
+    ],
+    [
+     "1998-06-29",
+     2
+    ],
+    [
+     "2001-07-02",
+     2
+    ],
+    [
+     "2006-07-03",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "COST",
+   "file": "COST",
+   "kind": "stock",
+   "sector": "Retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1986-07-09",
+     "Costco Wholesale"
+    ],
+    [
+     "1993-10-21",
+     "Price/Costco"
+    ],
+    [
+     "1997-01-21",
+     "Costco Companies"
+    ],
+    [
+     "1999-08-30",
+     "Costco Wholesale"
+    ]
+   ],
+   "tickers": [
+    [
+     "1986-07-09",
+     "COST"
+    ]
+   ],
+   "exchange": [
+    [
+     "1986-07-09",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1986-07-09",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1993-10-22",
+     2
+    ],
+    [
+     "2000-01-14",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "TGT",
+   "file": "TGT",
+   "kind": "stock",
+   "sector": "Retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Dayton Hudson"
+    ],
+    [
+     "2000-01-31",
+     "Target Corporation"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "DH"
+    ],
+    [
+     "2000-01-31",
+     "TGT"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1981-12-01",
+     2
+    ],
+    [
+     "1983-07-25",
+     2
+    ],
+    [
+     "1996-07-18",
+     3
+    ],
+    [
+     "1998-05-01",
+     2
+    ],
+    [
+     "2000-07-20",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "AXP",
+   "file": "AXP",
+   "kind": "stock",
+   "sector": "Financial services",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1972-06-01",
+     "American Express"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "AXP"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1983-02-11",
+     1.3333333333333333
+    ],
+    [
+     "1983-08-11",
+     1.5
+    ],
+    [
+     "1987-05-11",
+     2
+    ],
+    [
+     "1994-05-31",
+     1.13314447592068
+    ],
+    [
+     "2000-05-11",
+     3
+    ],
+    [
+     "2005-10-03",
+     1.1424654404204273
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "JPM",
+   "file": "JPM",
+   "kind": "stock",
+   "sector": "Banking",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Chemical New York Corp."
+    ],
+    [
+     "1988-04-29",
+     "Chemical Banking Corp."
+    ],
+    [
+     "1996-03-31",
+     "Chase Manhattan Corp."
+    ],
+    [
+     "2000-12-31",
+     "J.P. Morgan Chase & Co."
+    ],
+    [
+     "2004-07-01",
+     "JPMorgan Chase & Co."
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "CHL"
+    ],
+    [
+     "1996-04-01",
+     "CMB"
+    ],
+    [
+     "2001-01-02",
+     "JPM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1982-04-16",
+     1.5
+    ],
+    [
+     "1984-04-16",
+     1.5
+    ],
+    [
+     "1998-06-15",
+     2
+    ],
+    [
+     "2000-06-12",
+     1.5
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "BAC",
+   "file": "BAC",
+   "kind": "stock",
+   "sector": "Banking",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1973-02-21",
+     "NCNB Corporation"
+    ],
+    [
+     "1992-01-01",
+     "NationsBank"
+    ],
+    [
+     "1998-09-30",
+     "BankAmerica Corp."
+    ],
+    [
+     "1999-04-28",
+     "Bank of America"
+    ]
+   ],
+   "tickers": [
+    [
+     "1973-02-21",
+     "NCB"
+    ],
+    [
+     "1992-01-01",
+     "NB"
+    ],
+    [
+     "1998-10-01",
+     "BAC"
+    ]
+   ],
+   "exchange": [
+    [
+     "1973-02-21",
+     "NYSE"
+    ]
+   ],
+   "first": "1973-02-21",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1986-11-21",
+     2
+    ],
+    [
+     "1997-02-28",
+     2
+    ],
+    [
+     "2004-08-30",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "C",
+   "file": "C",
+   "kind": "stock",
+   "sector": "Banking",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1998-10-08",
+     "Citigroup"
+    ]
+   ],
+   "tickers": [
+    [
+     "1998-10-08",
+     "C"
+    ]
+   ],
+   "exchange": [
+    [
+     "1998-10-08",
+     "NYSE"
+    ]
+   ],
+   "first": "1998-10-08",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1999-06-01",
+     1.5
+    ],
+    [
+     "2000-08-28",
+     1.3333333333333333
+    ],
+    [
+     "2011-05-09",
+     0.1
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "WFC",
+   "file": "WFC",
+   "kind": "stock",
+   "sector": "Banking",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1998-11-02",
+     "Wells Fargo & Company"
+    ]
+   ],
+   "tickers": [
+    [
+     "1998-11-02",
+     "WFC"
+    ]
+   ],
+   "exchange": [
+    [
+     "1998-11-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1998-11-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2006-08-14",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "GS",
+   "file": "GS",
+   "kind": "stock",
+   "sector": "Investment banking",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1999-05-04",
+     "Goldman Sachs Group"
+    ]
+   ],
+   "tickers": [
+    [
+     "1999-05-04",
+     "GS"
+    ]
+   ],
+   "exchange": [
+    [
+     "1999-05-04",
+     "NYSE"
+    ]
+   ],
+   "first": "1999-05-04",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "AIG",
+   "file": "AIG",
+   "kind": "stock",
+   "sector": "Insurance",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1973-01-02",
+     "American International Group"
+    ]
+   ],
+   "tickers": [
+    [
+     "1973-01-02",
+     "AIG"
+    ]
+   ],
+   "exchange": [
+    [
+     "1973-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1973-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1974-04-01",
+     1.25
+    ],
+    [
+     "1977-03-29",
+     1.25
+    ],
+    [
+     "1981-05-28",
+     1.5
+    ],
+    [
+     "1983-04-26",
+     1.25
+    ],
+    [
+     "1986-11-18",
+     2
+    ],
+    [
+     "1990-07-23",
+     1.25
+    ],
+    [
+     "1993-07-30",
+     1.5
+    ],
+    [
+     "1995-07-31",
+     1.5
+    ],
+    [
+     "1997-07-28",
+     1.5
+    ],
+    [
+     "1998-08-03",
+     1.5
+    ],
+    [
+     "1999-08-02",
+     1.25
+    ],
+    [
+     "2000-07-31",
+     1.5
+    ],
+    [
+     "2009-07-01",
+     0.05
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "BRK-B",
+   "file": "BRK-B",
+   "kind": "stock",
+   "sector": "Conglomerate",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1996-05-09",
+     "Berkshire Hathaway (Class B)"
+    ]
+   ],
+   "tickers": [
+    [
+     "1996-05-09",
+     "BRK.B"
+    ]
+   ],
+   "exchange": [
+    [
+     "1996-05-09",
+     "NYSE"
+    ]
+   ],
+   "first": "1996-05-09",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2010-01-21",
+     50
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "V",
+   "file": "V",
+   "kind": "stock",
+   "sector": "Payments",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2008-03-19",
+     "Visa Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "2008-03-19",
+     "V"
+    ]
+   ],
+   "exchange": [
+    [
+     "2008-03-19",
+     "NYSE"
+    ]
+   ],
+   "first": "2008-03-19",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2015-03-19",
+     4
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MA",
+   "file": "MA",
+   "kind": "stock",
+   "sector": "Payments",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2006-05-25",
+     "MasterCard Incorporated"
+    ],
+    [
+     "2016-01-01",
+     "Mastercard"
+    ]
+   ],
+   "tickers": [
+    [
+     "2006-05-25",
+     "MA"
+    ]
+   ],
+   "exchange": [
+    [
+     "2006-05-25",
+     "NYSE"
+    ]
+   ],
+   "first": "2006-05-25",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2014-01-22",
+     10
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "PYPL",
+   "file": "PYPL",
+   "kind": "stock",
+   "sector": "Payments",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2015-07-06",
+     "PayPal Holdings"
+    ]
+   ],
+   "tickers": [
+    [
+     "2015-07-06",
+     "PYPL"
+    ]
+   ],
+   "exchange": [
+    [
+     "2015-07-06",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2015-07-06",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "T",
+   "file": "T",
+   "kind": "stock",
+   "sector": "Telecommunications",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1984-01-01",
+     "Southwestern Bell"
+    ],
+    [
+     "1995-04-28",
+     "SBC Communications"
+    ],
+    [
+     "2005-11-18",
+     "AT&T Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1984-01-01",
+     "SBC"
+    ],
+    [
+     "2005-12-01",
+     "T"
+    ]
+   ],
+   "exchange": [
+    [
+     "1984-01-03",
+     "NYSE"
+    ]
+   ],
+   "first": "1984-01-03",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1987-05-26",
+     3
+    ],
+    [
+     "1993-05-26",
+     2
+    ],
+    [
+     "1998-03-20",
+     2
+    ],
+    [
+     "2022-04-11",
+     1.324
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "VZ",
+   "file": "VZ",
+   "kind": "stock",
+   "sector": "Telecommunications",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1984-01-01",
+     "Bell Atlantic"
+    ],
+    [
+     "2000-06-30",
+     "Verizon Communications"
+    ]
+   ],
+   "tickers": [
+    [
+     "1984-01-01",
+     "BEL"
+    ],
+    [
+     "2000-07-03",
+     "VZ"
+    ]
+   ],
+   "exchange": [
+    [
+     "1984-01-03",
+     "NYSE"
+    ]
+   ],
+   "first": "1984-01-03",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1986-04-18",
+     2
+    ],
+    [
+     "1990-05-02",
+     2
+    ],
+    [
+     "1998-06-30",
+     2
+    ],
+    [
+     "2006-11-20",
+     1.038055099964706
+    ],
+    [
+     "2008-04-01",
+     1.0046515366145252
+    ],
+    [
+     "2010-07-02",
+     1.0662242546825904
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "CMCSA",
+   "file": "CMCSA",
+   "kind": "stock",
+   "sector": "Cable & media",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1972-06-29",
+     "Comcast"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "CMCSA"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-29",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1980-05-16",
+     1.5
+    ],
+    [
+     "1981-04-13",
+     1.5
+    ],
+    [
+     "1983-01-06",
+     1.5
+    ],
+    [
+     "1984-09-19",
+     1.5
+    ],
+    [
+     "1985-06-28",
+     1.5
+    ],
+    [
+     "1986-12-19",
+     1.5
+    ],
+    [
+     "1988-04-11",
+     1.5
+    ],
+    [
+     "1989-10-25",
+     1.5
+    ],
+    [
+     "1994-02-03",
+     1.5
+    ],
+    [
+     "1999-05-06",
+     2
+    ],
+    [
+     "2007-02-22",
+     1.5
+    ],
+    [
+     "2017-02-21",
+     2
+    ],
+    [
+     "2026-01-05",
+     1.067
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MSI",
+   "file": "MSI",
+   "kind": "stock",
+   "sector": "Communications equipment",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Motorola"
+    ],
+    [
+     "2011-01-04",
+     "Motorola Solutions"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "MOT"
+    ],
+    [
+     "2011-01-04",
+     "MSI"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1965-05-26",
+     1.5
+    ],
+    [
+     "1970-05-26",
+     2
+    ],
+    [
+     "1973-06-04",
+     2
+    ],
+    [
+     "1984-06-04",
+     3
+    ],
+    [
+     "1993-01-19",
+     2
+    ],
+    [
+     "1994-04-19",
+     2
+    ],
+    [
+     "2000-06-02",
+     3
+    ],
+    [
+     "2004-12-03",
+     1.1173184357541899
+    ],
+    [
+     "2011-01-04",
+     0.24737167594310452
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "XRX",
+   "file": "XRX",
+   "kind": "stock",
+   "sector": "Office equipment",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Xerox Corporation"
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "XRX"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1964-01-06",
+     5
+    ],
+    [
+     "1969-06-18",
+     3
+    ],
+    [
+     "1996-06-07",
+     3
+    ],
+    [
+     "1999-02-24",
+     2
+    ],
+    [
+     "2017-01-03",
+     1.518
+    ],
+    [
+     "2017-06-15",
+     0.25
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "HPQ",
+   "file": "HPQ",
+   "kind": "stock",
+   "sector": "Computers",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Hewlett-Packard"
+    ],
+    [
+     "2015-11-01",
+     "HP Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1962-01-02",
+     "HWP"
+    ],
+    [
+     "2002-05-06",
+     "HPQ"
+    ]
+   ],
+   "exchange": [
+    [
+     "1962-01-02",
+     "NYSE"
+    ]
+   ],
+   "first": "1962-01-02",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1970-03-20",
+     2
+    ],
+    [
+     "1979-07-31",
+     2
+    ],
+    [
+     "1981-07-20",
+     2
+    ],
+    [
+     "1983-08-26",
+     2
+    ],
+    [
+     "1995-04-17",
+     2
+    ],
+    [
+     "1996-07-16",
+     2
+    ],
+    [
+     "2000-10-30",
+     2
+    ],
+    [
+     "2015-11-02",
+     2.202
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "TXN",
+   "file": "TXN",
+   "kind": "stock",
+   "sector": "Semiconductors",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Texas Instruments"
+    ]
+   ],
+   "tickers": [
+    [
+     "1972-06-01",
+     "TXN"
+    ]
+   ],
+   "exchange": [
+    [
+     "1972-06-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1972-06-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1973-05-29",
+     2
+    ],
+    [
+     "1987-06-15",
+     3
+    ],
+    [
+     "1995-08-21",
+     2
+    ],
+    [
+     "1997-11-24",
+     2
+    ],
+    [
+     "1999-08-17",
+     2
+    ],
+    [
+     "2000-05-23",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "INTC",
+   "file": "INTC",
+   "kind": "stock",
+   "sector": "Semiconductors",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Intel Corporation"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "INTC"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1980-10-09",
+     2
+    ],
+    [
+     "1983-07-01",
+     2
+    ],
+    [
+     "1987-10-29",
+     1.5
+    ],
+    [
+     "1993-06-07",
+     2
+    ],
+    [
+     "1995-06-19",
+     2
+    ],
+    [
+     "1997-07-14",
+     2
+    ],
+    [
+     "1999-04-12",
+     2
+    ],
+    [
+     "2000-07-31",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "AMD",
+   "file": "AMD",
+   "kind": "stock",
+   "sector": "Semiconductors",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Advanced Micro Devices"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "AMD"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NYSE"
+    ],
+    [
+     "2015-03-31",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1980-10-24",
+     2
+    ],
+    [
+     "1982-10-28",
+     1.5
+    ],
+    [
+     "1983-08-23",
+     2
+    ],
+    [
+     "2000-08-22",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "AAPL",
+   "file": "AAPL",
+   "kind": "stock",
+   "sector": "Computers & consumer electronics",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-12-12",
+     "Apple Computer"
+    ],
+    [
+     "2007-01-09",
+     "Apple Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-12-12",
+     "AAPL"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-12-12",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1980-12-12",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1987-06-16",
+     2
+    ],
+    [
+     "2000-06-21",
+     2
+    ],
+    [
+     "2005-02-28",
+     2
+    ],
+    [
+     "2014-06-09",
+     7
+    ],
+    [
+     "2020-08-31",
+     4
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "MSFT",
+   "file": "MSFT",
+   "kind": "stock",
+   "sector": "Software",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1986-03-13",
+     "Microsoft"
+    ]
+   ],
+   "tickers": [
+    [
+     "1986-03-13",
+     "MSFT"
+    ]
+   ],
+   "exchange": [
+    [
+     "1986-03-13",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1986-03-13",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1987-09-21",
+     2
+    ],
+    [
+     "1990-04-16",
+     2
+    ],
+    [
+     "1991-06-27",
+     1.5
+    ],
+    [
+     "1992-06-15",
+     1.5
+    ],
+    [
+     "1994-05-23",
+     2
+    ],
+    [
+     "1996-12-09",
+     2
+    ],
+    [
+     "1998-02-23",
+     2
+    ],
+    [
+     "1999-03-29",
+     2
+    ],
+    [
+     "2003-02-18",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "ORCL",
+   "file": "ORCL",
+   "kind": "stock",
+   "sector": "Software",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1986-03-12",
+     "Oracle Systems"
+    ],
+    [
+     "1995-05-31",
+     "Oracle Corporation"
+    ]
+   ],
+   "tickers": [
+    [
+     "1986-03-12",
+     "ORCL"
+    ]
+   ],
+   "exchange": [
+    [
+     "1986-03-12",
+     "NASDAQ"
+    ],
+    [
+     "2013-07-15",
+     "NYSE"
+    ]
+   ],
+   "first": "1986-03-12",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1987-03-25",
+     2
+    ],
+    [
+     "1987-12-21",
+     2
+    ],
+    [
+     "1989-07-03",
+     2
+    ],
+    [
+     "1993-11-09",
+     2
+    ],
+    [
+     "1995-02-23",
+     1.5
+    ],
+    [
+     "1996-04-17",
+     1.5
+    ],
+    [
+     "1997-08-18",
+     1.5
+    ],
+    [
+     "1999-03-01",
+     1.5
+    ],
+    [
+     "2000-01-19",
+     2
+    ],
+    [
+     "2000-10-13",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "ADBE",
+   "file": "ADBE",
+   "kind": "stock",
+   "sector": "Software",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1986-08-13",
+     "Adobe Systems"
+    ],
+    [
+     "2018-10-03",
+     "Adobe Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "1986-08-13",
+     "ADBE"
+    ]
+   ],
+   "exchange": [
+    [
+     "1986-08-13",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1986-08-13",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1987-03-12",
+     2
+    ],
+    [
+     "1988-11-23",
+     2
+    ],
+    [
+     "1993-08-11",
+     2
+    ],
+    [
+     "1999-10-27",
+     2
+    ],
+    [
+     "2000-10-25",
+     2
+    ],
+    [
+     "2005-05-24",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "QCOM",
+   "file": "QCOM",
+   "kind": "stock",
+   "sector": "Semiconductors",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1991-12-13",
+     "Qualcomm"
+    ]
+   ],
+   "tickers": [
+    [
+     "1991-12-13",
+     "QCOM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1991-12-13",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1991-12-13",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1994-02-24",
+     2
+    ],
+    [
+     "1999-05-11",
+     2
+    ],
+    [
+     "1999-12-31",
+     4
+    ],
+    [
+     "2004-08-16",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "CSCO",
+   "file": "CSCO",
+   "kind": "stock",
+   "sector": "Networking",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1990-02-16",
+     "Cisco Systems"
+    ]
+   ],
+   "tickers": [
+    [
+     "1990-02-16",
+     "CSCO"
+    ]
+   ],
+   "exchange": [
+    [
+     "1990-02-16",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1990-02-16",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1991-03-18",
+     2
+    ],
+    [
+     "1992-03-23",
+     2
+    ],
+    [
+     "1993-03-22",
+     2
+    ],
+    [
+     "1994-03-21",
+     2
+    ],
+    [
+     "1996-02-20",
+     2
+    ],
+    [
+     "1997-12-17",
+     1.5
+    ],
+    [
+     "1998-09-16",
+     1.5
+    ],
+    [
+     "1999-06-22",
+     2
+    ],
+    [
+     "2000-03-23",
+     2
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "NVDA",
+   "file": "NVDA",
+   "kind": "stock",
+   "sector": "Semiconductors",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1999-01-22",
+     "NVIDIA"
+    ]
+   ],
+   "tickers": [
+    [
+     "1999-01-22",
+     "NVDA"
+    ]
+   ],
+   "exchange": [
+    [
+     "1999-01-22",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1999-01-22",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2000-06-27",
+     2
+    ],
+    [
+     "2001-09-12",
+     2
+    ],
+    [
+     "2006-04-07",
+     2
+    ],
+    [
+     "2007-09-11",
+     1.5
+    ],
+    [
+     "2021-07-20",
+     4
+    ],
+    [
+     "2024-06-10",
+     10
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "AMZN",
+   "file": "AMZN",
+   "kind": "stock",
+   "sector": "Internet retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1997-05-15",
+     "Amazon.com"
+    ]
+   ],
+   "tickers": [
+    [
+     "1997-05-15",
+     "AMZN"
+    ]
+   ],
+   "exchange": [
+    [
+     "1997-05-15",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1997-05-15",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1998-06-02",
+     2
+    ],
+    [
+     "1999-01-05",
+     3
+    ],
+    [
+     "1999-09-02",
+     2
+    ],
+    [
+     "2022-06-06",
+     20
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "EBAY",
+   "file": "EBAY",
+   "kind": "stock",
+   "sector": "Internet",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1998-09-24",
+     "eBay"
+    ]
+   ],
+   "tickers": [
+    [
+     "1998-09-24",
+     "EBAY"
+    ]
+   ],
+   "exchange": [
+    [
+     "1998-09-24",
+     "NASDAQ"
+    ]
+   ],
+   "first": "1998-09-24",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1999-03-02",
+     3
+    ],
+    [
+     "2000-05-25",
+     2
+    ],
+    [
+     "2003-08-29",
+     2
+    ],
+    [
+     "2005-02-17",
+     2
+    ],
+    [
+     "2015-07-20",
+     2.376
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "BB",
+   "file": "BB",
+   "kind": "stock",
+   "sector": "Mobile devices",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1999-02-04",
+     "Research In Motion"
+    ],
+    [
+     "2013-01-30",
+     "BlackBerry"
+    ]
+   ],
+   "tickers": [
+    [
+     "1999-02-04",
+     "RIMM"
+    ],
+    [
+     "2013-02-04",
+     "BBRY"
+    ],
+    [
+     "2016-10-17",
+     "BB"
+    ]
+   ],
+   "exchange": [
+    [
+     "1999-02-04",
+     "NASDAQ"
+    ],
+    [
+     "2016-10-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1999-02-04",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2004-06-07",
+     2
+    ],
+    [
+     "2007-08-21",
+     3
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "NOK",
+   "file": "NOK",
+   "kind": "stock",
+   "sector": "Mobile devices",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1994-07-01",
+     "Nokia (ADR)"
+    ]
+   ],
+   "tickers": [
+    [
+     "1994-07-01",
+     "NOK"
+    ]
+   ],
+   "exchange": [
+    [
+     "1994-07-01",
+     "NYSE"
+    ]
+   ],
+   "first": "1994-07-01",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1995-04-25",
+     2
+    ],
+    [
+     "1998-04-16",
+     2
+    ],
+    [
+     "1999-04-12",
+     2
+    ],
+    [
+     "2000-04-11",
+     4
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "NFLX",
+   "file": "NFLX",
+   "kind": "stock",
+   "sector": "Media",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2002-05-23",
+     "Netflix"
+    ]
+   ],
+   "tickers": [
+    [
+     "2002-05-23",
+     "NFLX"
+    ]
+   ],
+   "exchange": [
+    [
+     "2002-05-23",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2002-05-23",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2004-02-12",
+     2
+    ],
+    [
+     "2015-07-15",
+     7
+    ],
+    [
+     "2025-11-17",
+     10
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "GOOGL",
+   "file": "GOOGL",
+   "kind": "stock",
+   "sector": "Internet search",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2004-08-19",
+     "Google"
+    ],
+    [
+     "2015-10-02",
+     "Alphabet"
+    ]
+   ],
+   "tickers": [
+    [
+     "2004-08-19",
+     "GOOG"
+    ],
+    [
+     "2014-04-03",
+     "GOOGL"
+    ]
+   ],
+   "exchange": [
+    [
+     "2004-08-19",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2004-08-19",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2014-04-03",
+     1.998
+    ],
+    [
+     "2022-07-18",
+     20
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "CRM",
+   "file": "CRM",
+   "kind": "stock",
+   "sector": "Software",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2004-06-23",
+     "salesforce.com"
+    ],
+    [
+     "2022-04-01",
+     "Salesforce"
+    ]
+   ],
+   "tickers": [
+    [
+     "2004-06-23",
+     "CRM"
+    ]
+   ],
+   "exchange": [
+    [
+     "2004-06-23",
+     "NYSE"
+    ]
+   ],
+   "first": "2004-06-23",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2013-04-18",
+     4
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "META",
+   "file": "META",
+   "kind": "stock",
+   "sector": "Social media",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2012-05-18",
+     "Facebook"
+    ],
+    [
+     "2021-10-28",
+     "Meta Platforms"
+    ]
+   ],
+   "tickers": [
+    [
+     "2012-05-18",
+     "FB"
+    ],
+    [
+     "2022-06-09",
+     "META"
+    ]
+   ],
+   "exchange": [
+    [
+     "2012-05-18",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2012-05-18",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "GME",
+   "file": "GME",
+   "kind": "stock",
+   "sector": "Retail",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2002-02-13",
+     "GameStop"
+    ]
+   ],
+   "tickers": [
+    [
+     "2002-02-13",
+     "GME"
+    ]
+   ],
+   "exchange": [
+    [
+     "2002-02-13",
+     "NYSE"
+    ]
+   ],
+   "first": "2002-02-13",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2007-03-19",
+     2
+    ],
+    [
+     "2022-07-22",
+     4
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "AMC",
+   "file": "AMC",
+   "kind": "stock",
+   "sector": "Entertainment",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2013-12-18",
+     "AMC Entertainment"
+    ]
+   ],
+   "tickers": [
+    [
+     "2013-12-18",
+     "AMC"
+    ]
+   ],
+   "exchange": [
+    [
+     "2013-12-18",
+     "NYSE"
+    ]
+   ],
+   "first": "2013-12-18",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "2023-08-24",
+     0.1
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "BABA",
+   "file": "BABA",
+   "kind": "stock",
+   "sector": "E-commerce",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2014-09-19",
+     "Alibaba Group (ADR)"
+    ]
+   ],
+   "tickers": [
+    [
+     "2014-09-19",
+     "BABA"
+    ]
+   ],
+   "exchange": [
+    [
+     "2014-09-19",
+     "NYSE"
+    ]
+   ],
+   "first": "2014-09-19",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "TSM",
+   "file": "TSM",
+   "kind": "stock",
+   "sector": "Semiconductors",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1997-10-09",
+     "Taiwan Semiconductor (ADR)"
+    ]
+   ],
+   "tickers": [
+    [
+     "1997-10-09",
+     "TSM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1997-10-09",
+     "NYSE"
+    ]
+   ],
+   "first": "1997-10-09",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1998-08-26",
+     1.45
+    ],
+    [
+     "1999-08-16",
+     1.23
+    ],
+    [
+     "2000-05-15",
+     1.28
+    ],
+    [
+     "2001-06-26",
+     1.4
+    ],
+    [
+     "2002-06-19",
+     1.1
+    ],
+    [
+     "2003-07-07",
+     1.08
+    ],
+    [
+     "2004-06-14",
+     1.14
+    ],
+    [
+     "2005-06-13",
+     1.05
+    ],
+    [
+     "2006-06-20",
+     1.03
+    ],
+    [
+     "2009-07-15",
+     1.005
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "SONY",
+   "file": "SONY",
+   "kind": "stock",
+   "sector": "Consumer electronics",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1962-01-02",
+     "Sony (ADR)"
+    ]
+   ],
+   "tickers": [
+    [
+     "1973-02-21",
+     "SONY"
+    ]
+   ],
+   "exchange": [
+    [
+     "1973-02-21",
+     "NYSE"
+    ]
+   ],
+   "first": "1973-02-21",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1974-07-26",
+     2.5
+    ],
+    [
+     "1976-02-04",
+     1.25
+    ],
+    [
+     "1991-09-25",
+     1.1
+    ],
+    [
+     "2000-05-25",
+     2
+    ],
+    [
+     "2024-10-09",
+     5
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "TM",
+   "file": "TM",
+   "kind": "stock",
+   "sector": "Automobiles",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1999-09-29",
+     "Toyota Motor (ADR)"
+    ]
+   ],
+   "tickers": [
+    [
+     "1999-09-29",
+     "TM"
+    ]
+   ],
+   "exchange": [
+    [
+     "1999-09-29",
+     "NYSE"
+    ]
+   ],
+   "first": "1999-09-29",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "SNAP",
+   "file": "SNAP",
+   "kind": "stock",
+   "sector": "Social media",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2017-03-02",
+     "Snap Inc."
+    ]
+   ],
+   "tickers": [
+    [
+     "2017-03-02",
+     "SNAP"
+    ]
+   ],
+   "exchange": [
+    [
+     "2017-03-02",
+     "NYSE"
+    ]
+   ],
+   "first": "2017-03-02",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "UBER",
+   "file": "UBER",
+   "kind": "stock",
+   "sector": "Ride-hailing",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2019-05-10",
+     "Uber Technologies"
+    ]
+   ],
+   "tickers": [
+    [
+     "2019-05-10",
+     "UBER"
+    ]
+   ],
+   "exchange": [
+    [
+     "2019-05-10",
+     "NYSE"
+    ]
+   ],
+   "first": "2019-05-10",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "ZM",
+   "file": "ZM",
+   "kind": "stock",
+   "sector": "Software",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2019-04-18",
+     "Zoom Video Communications"
+    ]
+   ],
+   "tickers": [
+    [
+     "2019-04-18",
+     "ZM"
+    ]
+   ],
+   "exchange": [
+    [
+     "2019-04-18",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2019-04-18",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "ABNB",
+   "file": "ABNB",
+   "kind": "stock",
+   "sector": "Travel",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2020-12-10",
+     "Airbnb"
+    ]
+   ],
+   "tickers": [
+    [
+     "2020-12-10",
+     "ABNB"
+    ]
+   ],
+   "exchange": [
+    [
+     "2020-12-10",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2020-12-10",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "PLTR",
+   "file": "PLTR",
+   "kind": "stock",
+   "sector": "Software",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2020-09-30",
+     "Palantir Technologies"
+    ]
+   ],
+   "tickers": [
+    [
+     "2020-09-30",
+     "PLTR"
+    ]
+   ],
+   "exchange": [
+    [
+     "2020-09-30",
+     "NYSE"
+    ]
+   ],
+   "first": "2020-09-30",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "COIN",
+   "file": "COIN",
+   "kind": "stock",
+   "sector": "Crypto exchange",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2021-04-14",
+     "Coinbase Global"
+    ]
+   ],
+   "tickers": [
+    [
+     "2021-04-14",
+     "COIN"
+    ]
+   ],
+   "exchange": [
+    [
+     "2021-04-14",
+     "NASDAQ"
+    ]
+   ],
+   "first": "2021-04-14",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "DAL",
+   "file": "DAL",
+   "kind": "stock",
+   "sector": "Airlines",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "2007-05-03",
+     "Delta Air Lines"
+    ]
+   ],
+   "tickers": [
+    [
+     "2007-05-03",
+     "DAL"
+    ]
+   ],
+   "exchange": [
+    [
+     "2007-05-03",
+     "NYSE"
+    ]
+   ],
+   "first": "2007-05-03",
+   "last": "2026-09-30",
+   "splits": [],
+   "source": "Yahoo Finance chart API (daily bars)"
+  },
+  {
+   "id": "LUV",
+   "file": "LUV",
+   "kind": "stock",
+   "sector": "Airlines",
+   "unit": null,
+   "intl": false,
+   "names": [
+    [
+     "1980-03-17",
+     "Southwest Airlines"
+    ]
+   ],
+   "tickers": [
+    [
+     "1980-03-17",
+     "LUV"
+    ]
+   ],
+   "exchange": [
+    [
+     "1980-03-17",
+     "NYSE"
+    ]
+   ],
+   "first": "1980-03-17",
+   "last": "2026-09-30",
+   "splits": [
+    [
+     "1980-09-23",
+     1.5
+    ],
+    [
+     "1981-10-23",
+     1.25
+    ],
+    [
+     "1983-01-24",
+     2
+    ],
+    [
+     "1984-01-30",
+     1.25
+    ],
+    [
+     "1990-08-30",
+     1.5
+    ],
+    [
+     "1992-07-16",
+     2
+    ],
+    [
+     "1993-07-16",
+     1.5
+    ],
+    [
+     "1997-11-28",
+     1.5
+    ],
+    [
+     "1998-08-21",
+     1.5
+    ],
+    [
+     "1999-07-20",
+     1.5
+    ],
+    [
+     "2001-02-16",
+     1.5
+    ]
+   ],
+   "source": "Yahoo Finance chart API (daily bars)"
+  }
+ ]
+}
