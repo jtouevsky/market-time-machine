@@ -2,13 +2,11 @@
 
 **Travel to any date in market history and invest using only what was knowable that day.**
 
-![Market Time Machine landing page](docs/screenshots/landing.jpg)
+![Demo: travelling to Black Monday 1987, buying IBM in the trading terminal, fast-forwarding a year, then jumping to the 1997 web](docs/screenshots/demo.gif)
 
 Type a date (`October 19, 1987`, `the day Lehman failed`, `moon landing`). The app then acts as if that evening is the present. News, prices, economic numbers, sports scores, company profiles, search results and even the interface come from that day. You get a fictional $10,000 to invest, then fast-forward a day, a month or a decade to see what happened.
 
 ![Six eras of the interface](docs/screenshots/eras.jpg)
-
-<!-- TODO: add a 15–20 s GIF here (docs/screenshots/demo.gif) — see "Recording a demo GIF" at the bottom -->
 
 ## Why I built it
 
@@ -141,17 +139,3 @@ Values the app *estimates* (for example the Dow before 1928, some commodity quot
 ## License
 
 [MIT](LICENSE) © 2026 jtouevsky
-
----
-
-### Recording a demo GIF
-
-Record a 15–20 second screen capture at about 1280×800. Use Kap or CleanShot on a Mac, or QuickTime and then convert:
-
-1. Start on the landing page and move the cursor over the glass capsule.
-2. Type `October 19, 1987` and press Enter. Let the transition play.
-3. In the terminal, type `IBM` and press Enter, then `BUY IBM 10`.
-4. Type `+1Y` and pause on the period review.
-5. Go back, type `June 17, 1997`, and scroll the early-web page.
-
-Save it as `docs/screenshots/demo.gif`, keep it under ~8 MB, and replace the TODO comment near the top of this file with `![Demo](docs/screenshots/demo.gif)`.
