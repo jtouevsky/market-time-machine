@@ -1,0 +1,15 @@
+/* ---------------------------------------------------------------- command palette (modern) */
+.cmdk-backdrop { position: fixed; inset: 0; z-index: 260; background: rgba(8, 10, 14, .38); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: grid; justify-items: center; align-items: start; padding: 12vh 16px 16px; animation: fade .2s ease-out; }
+.cmdk { width: min(640px, 100%); border-radius: 18px; overflow: hidden; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); box-shadow: 0 30px 80px rgba(0,0,0,.35); animation: modal-in .3s cubic-bezier(.2,.8,.2,1); }
+.cmdk-input { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-bottom: 1px solid var(--rule); color: var(--mute); }
+.cmdk-input input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font: 500 16px var(--body-font); }
+.cmdk kbd, .h-fin-search kbd { font: 600 10px var(--body-font); border: 1px solid var(--rule); border-radius: 5px; padding: 2px 5px; color: var(--mute); }
+.cmdk-list { list-style: none; margin: 0; padding: 6px; max-height: 50vh; overflow: auto; }
+.cmdk-list li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 12px; border-radius: 10px; cursor: pointer; font-size: 14px; }
+.cmdk-list li.is-sel { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.cmdk-hint { color: var(--mute); font-size: 12px; white-space: nowrap; }
+.cmdk-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cmdk-foot { padding: 8px 16px; font-size: 11.5px; color: var(--mute); border-top: 1px solid var(--rule); }
+.h-fin-search { display: inline-flex; align-items: center; gap: 8px; padding: 7px 10px 7px 12px; border-radius: 999px; border: 1px solid var(--rule); background: var(--panel, var(--paper)); color: var(--mute); cursor: pointer; font: 500 13px var(--body-font); }
+.h-fin-mark { display: inline-block; width: 10px; height: 10px; border-radius: 3px; background: var(--accent); margin-right: 8px; vertical-align: 1px; }
+

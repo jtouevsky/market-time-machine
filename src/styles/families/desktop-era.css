@@ -1,0 +1,202 @@
+/* ===========================================================================
+   1989–1992 DESKTOP SKINS — craft layer (loaded after desktop.css)
+   .dk-mono  : 1-bit black-and-white windowing (close box, striped title bars, zoom box, dithered desk)
+   .dk-win3  : grey bevelled windows, control-menu box, navy / white active-inactive captions, Program Manager
+   =========================================================================== */
+/* ---------- pictogram colour ---------- */
+.dk-mono .dk-pict .p-a { fill: #fff; } .dk-mono .dk-pict .p-b { fill: #000; }
+.dk-win3 .dk-pict .p-a { fill: #ffff80; } .dk-win3 .dk-pict .p-b { fill: #000080; }
+.dk-win3 .dk-pict-markets .p-a { fill: #80ff80; } .dk-win3 .dk-pict-movers .p-a { fill: #80ff80; } .dk-win3 .dk-pict-movers .p-b { fill: #ff4040; }
+.dk-win3 .dk-pict-sports .p-a { fill: #ffa060; } .dk-win3 .dk-pict-economy .p-a { fill: #80ffff; } .dk-win3 .dk-pict-find .p-a { fill: #c0e8ff; }
+.dk-win3 .dk-pict-portfolio .p-a { fill: #c08040; } .dk-win3 .dk-pict-portfolio .p-b { fill: #ffff00; } .dk-win3 .dk-pict-sources .p-a { fill: #ff8080; }
+.dk-win3 .dk-pict-control .p-a { fill: #c0c0c0; } .dk-win3 .dk-pict-companies .p-a { fill: #c0a0ff; } .dk-win3 .dk-pict-pm .p-a { fill: #ffffff; }
+
+/* ---------- scrollbars (CSS-only, both skins) ---------- */
+.dk-desktop ::-webkit-scrollbar { width: 16px; height: 16px; }
+.dk-desktop ::-webkit-scrollbar-corner { background: #fff; }
+.dk-mono ::-webkit-scrollbar-track { background: repeating-conic-gradient(#000 0% 25%, #fff 0% 50%) 0 0 / 2px 2px; border-left: 2px solid #000; }
+.dk-mono ::-webkit-scrollbar-thumb { background: #fff; border: 2px solid #000; }
+.dk-mono ::-webkit-scrollbar-button:single-button { height: 16px; width: 16px; background-color: #fff; border: 2px solid #000; background-repeat: no-repeat; background-position: center; }
+.dk-win3 ::-webkit-scrollbar-track { background: repeating-conic-gradient(#c0c0c0 0% 25%, #fff 0% 50%) 0 0 / 2px 2px; }
+.dk-win3 ::-webkit-scrollbar-thumb { background: #c0c0c0; border: 1px solid #000; box-shadow: inset 1px 1px #fff, inset -1px -1px #808080; }
+.dk-win3 ::-webkit-scrollbar-button:single-button { height: 16px; width: 16px; background-color: #c0c0c0; border: 1px solid #000; box-shadow: inset 1px 1px #fff, inset -1px -1px #808080; background-repeat: no-repeat; background-position: center; }
+.dk-desktop ::-webkit-scrollbar-button:vertical:start:decrement { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 8l4-5 4 5z'/%3E%3C/svg%3E"); }
+.dk-desktop ::-webkit-scrollbar-button:vertical:end:increment { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 5 4-5z'/%3E%3C/svg%3E"); }
+.dk-desktop ::-webkit-scrollbar-button:horizontal:start:decrement { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M8 2L3 6l5 4z'/%3E%3C/svg%3E"); }
+.dk-desktop ::-webkit-scrollbar-button:horizontal:end:increment { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4 2l5 4-5 4z'/%3E%3C/svg%3E"); }
+.dk-desktop ::-webkit-scrollbar-button:vertical:start:increment, .dk-desktop ::-webkit-scrollbar-button:vertical:end:decrement,
+.dk-desktop ::-webkit-scrollbar-button:horizontal:start:increment, .dk-desktop ::-webkit-scrollbar-button:horizontal:end:decrement { display: none; }
+
+/* ======================================================================= MONO (1-bit) */
+.dk-mono { --desk-bg: repeating-conic-gradient(#000 0% 25%, #fff 0% 50%) 0 0 / 4px 4px; font-size: 19px; }
+.dk-mono .dk-menubar { height: 26px; padding: 0; background: #fff; border-bottom: 2px solid #000; }
+.dk-mono .dk-menubar > .dk-menu > button { padding: 0 14px; }
+.dk-mono .dk-menu:first-child > button { font-size: 22px; padding-inline: 16px; }
+.dk-mono .dk-clock { padding-right: 12px; }
+.dk-mono .dk-menu ul { border-width: 2px; box-shadow: 2px 2px 0 #000, 3px 3px 0 #000; padding: 0; }
+.dk-mono .dk-menu li button { padding: 0 18px 0 6px; line-height: 20px; }
+.dk-mono .dk-win { border: 2px solid #000; box-shadow: 2px 2px 0 #000, 3px 3px 0 #000; background: #fff; }
+.dk-mono .dk-title { height: 22px; padding: 0 6px; background: #fff; border-bottom: 2px solid #000; gap: 0; position: relative; }
+.dk-mono .dk-win.is-active .dk-title { background: repeating-linear-gradient(#000 0 1px, #fff 1px 3px); background-size: 100% 100%; background-position: 0 4px; background-clip: content-box; padding-block: 4px; height: 22px; }
+.dk-mono .dk-win.is-active .dk-title { background-image: repeating-linear-gradient(#000 0 1px, #fff 1px 3px); }
+.dk-mono .dk-title-text { margin: 0 10px; padding: 0 12px; background: #fff; position: relative; z-index: 1; font-size: 19px; line-height: 18px; }
+.dk-mono .dk-win.is-inactive .dk-title-text { color: #444; }
+.dk-mono .dk-close, .dk-mono .dk-zoom { width: 14px; height: 14px; border: 2px solid #000; background: #fff; flex: none; z-index: 2; box-shadow: 0 0 0 2px #fff; }
+.dk-mono .dk-close:hover, .dk-mono .dk-close:active { background: #000; }
+.dk-mono .dk-zoom::after { content: ''; position: absolute; left: 1px; top: 1px; width: 5px; height: 5px; border: 2px solid #000; background: #fff; }
+.dk-mono .dk-zoom:hover::after, .dk-mono .dk-zoom:active { background: #000; }
+.dk-mono .dk-win.is-inactive .dk-close, .dk-mono .dk-win.is-inactive .dk-zoom { opacity: .0; }
+.dk-mono .dk-win.is-inactive:hover .dk-close, .dk-mono .dk-win.is-inactive:hover .dk-zoom, .dk-mono .dk-win.is-inactive .dk-close:focus-visible, .dk-mono .dk-win.is-inactive .dk-zoom:focus-visible { opacity: 1; }
+.dk-mono .dk-close:focus-visible, .dk-mono .dk-zoom:focus-visible { outline: 2px dotted #000; outline-offset: 3px; }
+.dk-mono .dk-body { background: #fff; padding: 8px 10px; }
+.dk-mono .dk-grip { width: 16px; height: 16px; background: #fff; border-left: 2px solid #000; border-top: 2px solid #000; }
+.dk-mono .dk-grip::after { content: ''; position: absolute; left: 2px; top: 2px; width: 7px; height: 7px; border: 2px solid #000; background: #fff; }
+.dk-mono .dk-grip:hover::after { background: #000; }
+.dk-mono .dk-win.is-inactive .dk-body { filter: none; }
+.dk-mono .dk-win.is-active { box-shadow: 3px 3px 0 #000, 4px 4px 0 #000; }
+.dk-mono .dk-icons-desk { gap: 10px 8px; }
+.dk-mono .dk-ico { padding: 4px 2px; color: #000; }
+.dk-mono .dk-ico .dk-pict { background: #fff; border: 2px solid #000; padding: 3px; width: 44px; height: 38px; box-shadow: 2px 2px 0 #000; }
+.dk-mono .dk-ico-label { background: #fff; padding: 0 4px; border: 2px solid #fff; font-size: 17px; }
+.dk-mono .dk-ico:hover .dk-ico-label { text-decoration: underline; }
+.dk-mono .dk-ico.is-sel .dk-ico-label, .dk-mono .dk-ico:focus-visible .dk-ico-label { background: #000; color: #fff; border-color: #000; }
+.dk-mono .dk-ico.is-sel .dk-pict, .dk-mono .dk-ico:focus-visible .dk-pict { background: #000; color: #fff; filter: none; }
+.dk-mono .dk-ico.is-sel .dk-pict .p-a, .dk-mono .dk-ico:focus-visible .dk-pict .p-a { fill: #000; } .dk-mono .dk-ico.is-sel .dk-pict .p-b, .dk-mono .dk-ico:focus-visible .dk-pict .p-b { fill: #fff; }
+.dk-mono .dk-ico:focus-visible { outline: 2px dotted #000; outline-offset: 1px; }
+.dk-mono .dk-foot { background: #fff; color: #000; border-top: 2px solid #000; }
+.dk-mono .dk-btn { border-radius: 8px; background: #fff; min-width: 76px; padding: 1px 18px; }
+.dk-mono .dk-btn:hover, .dk-mono .dk-btn:active { background: #000; color: #fff; }
+.dk-mono .dk-btn.is-default { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000; }
+.dk-mono .dk-btn:focus-visible { outline: 2px dotted #000; outline-offset: 5px; }
+.dk-mono .dk-modal { background: repeating-conic-gradient(rgba(0,0,0,.35) 0% 25%, transparent 0% 50%) 0 0 / 2px 2px; }
+.dk-mono .dk-dialog { background: #fff; border: 2px solid #000; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000, 7px 7px 0 4px #000; }
+.dk-mono .dk-dialog .dk-title { justify-content: center; }
+.dk-mono .dk-dialog .dk-close-static { position: absolute; left: 8px; }
+.dk-mono .dk-dialog .dk-title-text { margin: 0; }
+.dk-mono .dk-about { display: flex; gap: 14px; align-items: flex-start; }
+.dk-mono .dk-about .dk-pict { width: 48px; height: 48px; border: 2px solid #000; padding: 4px; box-shadow: 2px 2px 0 #000; }
+.dk-mono .dk-about h2 { margin: 0 0 2px; font-size: 24px; font-weight: 400; }
+.dk-mono .dk-about p { margin: 4px 0; line-height: 1.15; }
+.dk-mono .dk-fine { color: #444; }
+.dk-mono .dk-cp { border: 2px solid #000; margin: 0 0 10px; padding: 6px 10px 8px; }
+.dk-mono .dk-cp legend { padding: 0 6px; }
+.dk-cp-swatches { display: flex; flex-wrap: wrap; gap: 8px; }
+.dk-cp-sw { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; padding: 3px 5px; cursor: pointer; }
+.dk-cp-sw input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.dk-cp-chip { width: 48px; height: 32px; border: 2px solid #000; display: block; }
+.dk-mono .dk-cp-sw.is-on { background: #000; color: #fff; }
+.dk-mono .dk-cp-sw:has(input:focus-visible) { outline: 2px dotted #000; outline-offset: 1px; }
+.dk-cp-check { display: flex; gap: 8px; align-items: center; margin: 4px 0; cursor: pointer; }
+.dk-mono .dk-cp-check input { width: 16px; height: 16px; accent-color: #000; }
+.dk-splash-mono > div { background: #fff; border: 2px solid #000; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000, 6px 6px 0 4px #000; padding: 22px 34px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px; border-radius: 12px; }
+.dk-splash-mono .dk-pict { width: 48px; height: 48px; color: #000; }
+.dk-splash-mono b { font-weight: 400; font-size: 28px; color: #000; }
+.dk-splash-mono small { color: #333; font-size: 17px; }
+.dk-splash-mono small::after { content: ''; animation: dk-dots 1.2s steps(4) infinite; }
+@keyframes dk-dots { 0% { content: ''; } 25% { content: '.'; } 50% { content: '..'; } 75% { content: '...'; } }
+.dk-mono .dk-splash { background: repeating-conic-gradient(#000 0% 25%, #fff 0% 50%) 0 0 / 4px 4px; }
+.dk-mono .m-btn:hover:not(:disabled) { background: #000; color: #fff; }
+.dk-mono .news-links a:hover, .dk-mono .m-link:hover { background: #000; color: #fff; text-decoration: none; }
+
+/* ======================================================================= WIN3 */
+.dk-win3 { --desk-bg: #008080; font-size: 13px; }
+.dk-win3 .dk-menubar { height: 22px; background: #fff; color: #000; border-bottom: 1px solid #000; padding: 0 2px; font-size: 13px; }
+.dk-win3 .dk-menubar > .dk-menu > button { padding: 0 9px; }
+.dk-win3 .dk-menubar > .dk-menu:hover > button, .dk-win3 .dk-menubar > .dk-menu.is-open > button { background: #000080; color: #fff; }
+.dk-win3 .dk-apple { padding: 0 8px 0 4px; font-size: 16px; color: #000; }
+.dk-win3 .dk-menu ul { background: #fff; border: 1px solid #000; box-shadow: 2px 2px 0 #000; padding: 2px 0; min-width: 190px; }
+.dk-win3 .dk-menu li button { padding: 1px 16px 1px 2px; line-height: 18px; }
+.dk-win3 .dk-menu li button:hover, .dk-win3 .dk-menu li button.is-hot, .dk-win3 .dk-menu li button:focus-visible { background: #000080; color: #fff; }
+.dk-win3 .dk-sep { border-top: 1px solid #808080; margin: 2px 1px; }
+.dk-win3 .dk-clock { font-size: 12px; color: #000; }
+.dk-win3 .dk-win { background: #c0c0c0; border: 1px solid #000; padding: 3px; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080, 3px 3px 0 rgba(0,0,0,.55); }
+.dk-win3 .dk-win.is-active { box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080, 4px 4px 0 rgba(0,0,0,.6); }
+.dk-win3 .dk-title { height: 20px; padding: 0 1px; gap: 2px; border-bottom: 0; background: #fff; color: #000; margin-bottom: 1px; }
+.dk-win3 .dk-win.is-active .dk-title { background: #000080; color: #fff; }
+.dk-win3 .dk-win.is-inactive .dk-title { box-shadow: inset 0 0 0 1px #808080; }
+.dk-win3 .dk-title-text { background: none; color: inherit; font-weight: 700; text-align: center; font-size: 13px; padding: 0 4px; line-height: 20px; }
+.dk-win3 .dk-ctl, .dk-win3 .dk-min, .dk-win3 .dk-max { flex: none; width: 18px; height: 18px; padding: 0; background: #c0c0c0; color: #000; border: 1px solid #000; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080; cursor: pointer; display: grid; place-items: center; font: inherit; line-height: 1; }
+.dk-win3 .dk-ctl > span { display: block; width: 10px; height: 3px; background: #c0c0c0; border: 1px solid #000; box-shadow: 0 0 0 1px #fff inset; }
+.dk-win3 .dk-min > span, .dk-win3 .dk-max > span { font-size: 9px; }
+.dk-win3 .dk-ctl:active, .dk-win3 .dk-min:active, .dk-win3 .dk-max:active { box-shadow: inset 1px 1px 0 #808080; }
+.dk-win3 .dk-ctl:focus-visible, .dk-win3 .dk-min:focus-visible, .dk-win3 .dk-max:focus-visible { outline: 1px dotted #000; outline-offset: -4px; }
+.dk-win3 .dk-win.is-active .dk-title:focus-visible { outline: 1px dotted #fff; outline-offset: -3px; }
+.dk-win3 .dk-body { background: #fff; color: #000; border: 1px solid; border-color: #808080 #fff #fff #808080; box-shadow: inset 1px 1px 0 #000; padding: 6px 8px; }
+.dk-win3 .dk-grip { right: 1px; bottom: 1px; width: 16px; height: 16px; }
+.dk-win3 .dk-grip::after { content: ''; position: absolute; inset: 2px; background: repeating-linear-gradient(135deg, transparent 0 3px, #808080 3px 4px, #fff 4px 5px); clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+.dk-win3 .dk-pm .dk-body { padding: 4px; background: #c0c0c0; }
+.dk-win3 .pm-group { background: #fff; border: 1px solid #000; box-shadow: 2px 2px 0 rgba(0,0,0,.4); }
+.dk-win3 .pm-group-title { background: #fff; color: #000; font-weight: 700; text-align: center; border-bottom: 1px solid #000; padding: 1px 4px; }
+.dk-win3 .pm-icons { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); padding: 8px 4px; gap: 6px 2px; }
+.dk-win3 .dk-ico { color: #000; padding: 3px 1px; }
+.dk-win3 .dk-ico-label { font-size: 12px; padding: 0 3px; color: #000; }
+.dk-win3 .dk-ico:hover .dk-ico-label { text-decoration: underline; }
+.dk-win3 .dk-ico.is-sel .dk-ico-label, .dk-win3 .dk-ico:focus-visible .dk-ico-label { background: #000080; color: #fff; }
+.dk-win3 .dk-ico:focus-visible { outline: 1px dotted #000; outline-offset: -1px; }
+.dk-win3 .dk-tray li { width: 84px; }
+.dk-win3 .dk-tray button { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 2px; background: none; border: 0; color: #fff; font: inherit; font-size: 12px; cursor: pointer; padding: 2px; }
+.dk-win3 .dk-tray button span { padding: 0 3px; text-align: center; line-height: 1.15; }
+.dk-win3 .dk-tray button:hover span, .dk-win3 .dk-tray button:focus-visible span { background: #000080; color: #fff; }
+.dk-win3 .dk-tray button:focus-visible { outline: 1px dotted #fff; }
+.dk-win3 .dk-tray .dk-pict { color: #000; }
+.dk-win3 .dk-ctlmenu { position: absolute; margin: 0; padding: 2px 0; list-style: none; background: #fff; border: 1px solid #000; box-shadow: 2px 2px 0 #000; min-width: 150px; color: #000; }
+.dk-win3 .dk-ctlmenu li { margin: 0; padding: 0; }
+.dk-win3 .dk-ctlmenu button { display: flex; width: 100%; background: none; border: 0; font: inherit; text-align: left; padding: 1px 18px 1px 8px; color: #000; cursor: pointer; line-height: 18px; }
+.dk-win3 .dk-ctlmenu button:hover:not(:disabled), .dk-win3 .dk-ctlmenu button:focus-visible { background: #000080; color: #fff; outline: 0; }
+.dk-win3 .dk-ctlmenu button:disabled { color: #6b6b6b; cursor: default; }
+.dk-win3 .dk-foot { background: #c0c0c0; color: #000; border-top: 1px solid #fff; box-shadow: inset 0 1px 0 #808080; }
+.dk-win3 .dk-status { color: #000; }
+.dk-win3 .dk-modal { background: rgba(0,0,0,.18); }
+.dk-win3 .dk-dialog { background: #c0c0c0; border: 1px solid #000; padding: 3px; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080, 4px 4px 0 rgba(0,0,0,.6); }
+.dk-win3 .dk-dialog .dk-title { background: #000080; color: #fff; justify-content: flex-start; }
+.dk-win3 .dk-dialog .dk-ctl-static { cursor: default; }
+.dk-win3 .dk-dialog .dk-title-text { flex: 1; }
+.dk-win3 .dk-dialog-body { background: #c0c0c0; color: #000; padding: 12px 14px 4px; }
+.dk-win3 .dk-btn { background: #c0c0c0; color: #000; border: 1px solid #000; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080; padding: 2px 14px; min-width: 76px; }
+.dk-win3 .dk-btn.is-default { border-width: 2px; padding: 1px 13px; }
+.dk-win3 .dk-btn:active { box-shadow: inset 1px 1px 0 #808080; padding-top: 3px; }
+.dk-win3 .dk-btn:focus-visible { outline: 1px dotted #000; outline-offset: -5px; }
+.dk-win3 .dk-about { display: flex; gap: 14px; align-items: flex-start; }
+.dk-win3 .dk-about .dk-pict { width: 40px; height: 40px; flex: none; }
+.dk-win3 .dk-about h2 { margin: 0 0 4px; font-size: 16px; }
+.dk-win3 .dk-about p { margin: 4px 0; line-height: 1.3; }
+.dk-win3 .dk-fine { color: #404040; }
+.dk-win3 .dk-cp { border: 1px solid #808080; box-shadow: 1px 1px 0 #fff, inset 1px 1px 0 #fff; margin: 0 0 10px; padding: 6px 10px 8px; }
+.dk-win3 .dk-cp-sw.is-on { background: #000080; color: #fff; }
+.dk-win3 .dk-cp-sw:has(input:focus-visible) { outline: 1px dotted #000; }
+.dk-win3 .dk-cp-chip { border: 1px solid #000; box-shadow: inset 1px 1px #fff; }
+.dk-win3 .dk-splash { background: #008080; }
+.dk-splash-win3 > div { background: #c0c0c0; border: 1px solid #000; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080, 6px 6px 0 rgba(0,0,0,.55); padding: 22px 46px 14px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: min(340px, 90vw); }
+.dk-splash-win3 b { font-size: 38px; font-weight: 700; letter-spacing: -.02em; color: #000080; text-shadow: 2px 2px 0 #fff, 3px 3px 0 #808080; }
+.dk-splash-win3 span { color: #000; font-style: italic; }
+.dk-splash-win3 small { color: #000; margin-top: 4px; }
+.dk-splash-bar { display: block; width: 100%; height: 14px; margin-top: 12px; border: 1px solid; border-color: #808080 #fff #fff #808080; background: linear-gradient(90deg, #000080 0 100%) 0 0 / 0 100% no-repeat; animation: dk-load 1.8s steps(18) both; }
+@keyframes dk-load { to { background-size: 100% 100%; } }
+.dk-win3 .m-btn { background: #c0c0c0; color: #000; border: 1px solid #000; box-shadow: inset 1px 1px #fff, inset -1px -1px #808080; border-radius: 0; }
+.dk-win3 .m-btn:active:not(:disabled) { box-shadow: inset 1px 1px #808080; }
+
+/* ---------- shared motion: windows open with a quick zoom; menus have no fade (they were instant) ---------- */
+.dk-win { animation: dk-open .16s steps(4) both; }
+@keyframes dk-open { from { transform: scale(.94); opacity: .2; } to { transform: none; opacity: 1; } }
+.dk-win.is-zoom { animation: none; }
+
+@media (max-width: 1040px) {
+  .dk-mono .dk-icons-desk .dk-ico .dk-pict { width: 40px; height: 34px; }
+  .dk-win3 .pm-icons { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
+  .dk-win3 .dk-tray li { width: 76px; }
+}
+@media (max-width: 560px) {
+  .dk-win3 .dk-menu ul, .dk-mono .dk-menu ul { top: 24px; }
+  .dk-mono .dk-menu:first-child > button { padding-inline: 12px; }
+  .dk-splash-win3 b { font-size: 30px; }
+  .dk-splash-win3 > div, .dk-splash-mono > div { padding-inline: 18px; }
+  .dk-mono .dk-title-text { margin: 0 4px; padding: 0 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dk-win, .dk-splash-bar, .dk-splash-mono small::after { animation: none !important; }
+  .dk-splash-bar { background-size: 100% 100%; }
+}
+
+.world.fam-desktop.v-win3 { background: #c0c0c0; }
+.world.fam-desktop.v-mono { background: #fff; }
+.dk-ico, .dk-ico *, .dk-title, .dk-tray button { user-select: none; -webkit-user-select: none; }

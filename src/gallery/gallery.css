@@ -1,0 +1,41 @@
+/* DEV-only gallery chrome: neutral dark UI, independent of any era theme. */
+.xg { position: fixed; inset: 0; z-index: 99999; display: flex; flex-direction: column; background: #14161a; color: #e8eaed; font: 14px/1.4 system-ui, sans-serif; }
+.xg * { box-sizing: border-box; }
+.xg-top { display: flex; align-items: center; gap: 16px; padding: 10px 16px; border-bottom: 1px solid #343a44; }
+.xg-top h1 { margin: 0; font-size: 16px; flex: 1; }
+.xg-top h1 small { font-weight: 400; color: #aab1bd; margin-left: 8px; }
+.xg button, .xg input, .xg select { font: inherit; color: #e8eaed; background: #1f2329; border: 1px solid #4a5260; border-radius: 6px; padding: 5px 9px; }
+.xg button { cursor: pointer; }
+.xg :focus-visible { outline: 2px solid #8ab4ff; outline-offset: 1px; }
+.xg-toggle { display: flex; gap: 6px; align-items: center; }
+.xg-toggle input { width: 16px; height: 16px; padding: 0; }
+.xg-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(280px, 340px) 1fr; }
+.xg-side { display: flex; flex-direction: column; min-height: 0; border-right: 1px solid #343a44; }
+.xg-filters { display: grid; gap: 6px; padding: 10px; }
+.xg-count { margin: 0; padding: 0 12px 6px; color: #aab1bd; font-size: 12px; }
+.xg-list { list-style: none; margin: 0; padding: 0; overflow: auto; flex: 1; }
+.xg-list button { width: 100%; text-align: left; display: grid; grid-template-columns: 82px 1fr auto; gap: 0 8px; border: 0; border-bottom: 1px solid #262b33; border-radius: 0; background: transparent; padding: 8px 12px; }
+.xg-list button:hover { background: #1f2329; }
+.xg-list button.on { background: #26324a; box-shadow: inset 3px 0 #8ab4ff; }
+.yrs { color: #aab1bd; font-variant-numeric: tabular-nums; grid-row: span 2; }
+.nm { font-weight: 600; }
+.meta { color: #aab1bd; font-size: 12px; grid-column: 2; }
+.badge { font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid; grid-column: 3; grid-row: 1; align-self: start; text-transform: uppercase; letter-spacing: .04em; }
+.badge.complete { color: #9be3ad; border-color: #3f7a52; }
+.badge.partial { color: #f2d27a; border-color: #8a7330; }
+.badge.planned { color: #f5a3a3; border-color: #8a4040; }
+.xg-main { display: flex; flex-direction: column; min-height: 0; min-width: 0; padding: 10px 14px; gap: 10px; }
+.xg-info { display: flex; gap: 24px; }
+.xg-info section { flex: 1; min-width: 0; }
+.xg-info h2 { margin: 0 0 2px; font-size: 15px; display: flex; gap: 8px; align-items: center; }
+.xg-info p { margin: 2px 0; }
+.xg-info .meta { grid-column: auto; }
+.xg-info label { color: #aab1bd; font-size: 12px; }
+.xg-frames { flex: 1; min-height: 0; display: grid; gap: 10px; grid-template-columns: 1fr; }
+.xg-frames.two { grid-template-columns: 1fr 1fr; }
+.xg-frame { margin: 0; display: flex; flex-direction: column; min-height: 0; border: 1px solid #343a44; border-radius: 6px; overflow: hidden; background: #fff; }
+.xg-frame figcaption { background: #1f2329; padding: 4px 10px; font-size: 12px; color: #aab1bd; }
+.xg-frame figcaption span { margin-left: 8px; }
+.xg-frame iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+.xg-empty { color: #aab1bd; }
+@media (max-width: 800px) { .xg-body { grid-template-columns: 1fr; grid-template-rows: 40% 1fr; } .xg-frames.two { grid-template-columns: 1fr; } .xg-info { flex-direction: column; gap: 6px; } }

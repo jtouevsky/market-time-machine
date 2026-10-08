@@ -183,6 +183,7 @@
 /* -------- advance dock -------------------------------------------------- */
 .w-advance-dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; padding: 0 12px calc(10px + env(safe-area-inset-bottom, 0px)); pointer-events: none; display: flex; justify-content: center; }
 .m-adv { pointer-events: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 8px 12px; background: var(--dock-bg, var(--paper)); color: var(--dock-ink, var(--ink)); border: var(--dock-border, 1px solid var(--rule)); border-radius: var(--dock-radius, var(--radius, 0)); box-shadow: var(--dock-shadow, none); max-width: 100%; }
+.m-adv .m-btn:not(.m-btn-primary) { color: inherit; }
 .m-adv-label { font-family: var(--head-font); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .m-adv-buttons { display: flex; flex-wrap: wrap; gap: 6px; }
 .m-adv.is-pending { opacity: .7; }

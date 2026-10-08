@@ -1,0 +1,170 @@
+/* ==========================================================================================
+   1974 TELETEXT and 1977 VIDEOTEX — 40-column character-cell screens.
+   Teletext: black screen, seven saturated colours, solid heading bars, coloured Fastext keys.
+   Videotex: a blue frame, yellow keyed menus, keycap buttons, a *page# prompt.
+   Everything is scoped to .w-teletext. Colours are set here (not inherited from terminal.css)
+   so the look does not depend on which family stylesheet happened to load first.
+   ========================================================================================== */
+.world.w-teletext {
+  --mosaic: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='96' height='24'><rect x='0' y='0' width='8' height='8'/><rect x='8' y='0' width='8' height='8'/><rect x='8' y='8' width='8' height='8'/><rect x='8' y='16' width='8' height='8'/><rect x='16' y='0' width='8' height='8'/><rect x='16' y='8' width='8' height='8'/><rect x='24' y='8' width='8' height='8'/><rect x='16' y='16' width='8' height='8'/><rect x='24' y='16' width='8' height='8'/><rect x='32' y='0' width='8' height='8'/><rect x='32' y='8' width='8' height='8'/><rect x='40' y='8' width='8' height='8'/><rect x='56' y='0' width='8' height='8'/><rect x='56' y='8' width='8' height='8'/><rect x='56' y='16' width='8' height='8'/><rect x='64' y='0' width='8' height='8'/><rect x='72' y='0' width='8' height='8'/><rect x='64' y='8' width='8' height='8'/><rect x='64' y='16' width='8' height='8'/><rect x='88' y='0' width='8' height='8'/><rect x='88' y='8' width='8' height='8'/><rect x='80' y='16' width='8' height='8'/><rect x='88' y='16' width='8' height='8'/></svg>");
+  --tt-blue: #0000ee; --tt-cyan: #00ffff; --tt-yellow: #ffff00; --tt-green: #00ff00; --tt-red: #ff3030; --tt-mag: #ff5cff;
+  text-transform: uppercase; text-shadow: 0 0 2px rgba(255, 255, 255, .25); letter-spacing: .02em;
+  background: radial-gradient(ellipse at 50% 0%, #1c1c1f, #060607 70%); --enter: tt-on .5s steps(6) both; padding-top: 18px;
+}
+.world.w-teletext.v-videotex-1977 { background: radial-gradient(ellipse at 50% 0%, #15154a, #02021c 72%); }
+@keyframes tt-on { 0% { opacity: 0; filter: brightness(2.4); } 40% { opacity: 1; filter: brightness(1.6); } 100% { opacity: 1; filter: none; } }
+@keyframes tt-wipe { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes tt-flash { 0%, 49% { background: #000; color: #ffff00; } 50%, 100% { background: #ffff00; color: #000; } }
+@keyframes tt-cursor { 50% { opacity: 0; } }
+
+/* the tube: bezel, curved corners, scan lines */
+.w-teletext .w-frame { position: relative; margin: 0 auto 10px; max-width: 940px; padding: 10px 16px 20px; border-radius: 26px / 22px; background: var(--paper); overflow: hidden;
+  box-shadow: 0 0 0 9px #0d0d0e, 0 0 0 11px #2b2b2e, 0 18px 50px rgba(0, 0, 0, .7), 0 0 60px rgba(0, 255, 255, .08), inset 0 0 110px rgba(0, 0, 0, .55); }
+.w-teletext.v-videotex-1977 .w-frame { box-shadow: 0 0 0 9px #0d0d12, 0 0 0 11px #2b2b3a, 0 18px 50px rgba(0, 0, 0, .7), 0 0 70px rgba(80, 90, 255, .25), inset 0 0 110px rgba(0, 0, 30, .6); }
+.w-teletext .w-frame::after { content: ''; position: absolute; inset: 0; z-index: 20; pointer-events: none; border-radius: inherit;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .2) 0 1px, transparent 1px 3px), radial-gradient(ellipse at center, transparent 62%, rgba(0, 0, 0, .45) 100%); }
+.w-teletext .w-main { padding-block: 8px; animation: tt-wipe .7s steps(24, end) both; }
+.w-teletext .cx-flip { animation: tt-wipe .7s steps(24, end) both; }
+.w-teletext .cx { display: grid; gap: 6px 30px; align-items: start; }
+.w-teletext .cx-region { min-width: 0; }
+@media (max-width: 760px) {
+  .w-teletext .cx { grid-template-columns: minmax(0, 1fr) !important; grid-template-areas: none !important; }
+  .w-teletext .cx-region { grid-area: auto !important; }
+  .w-teletext .w-frame { margin: 0 auto; padding: 8px 10px 16px; border-radius: 16px / 14px; box-shadow: 0 0 0 5px #0d0d0e, 0 0 0 7px #2b2b2e, inset 0 0 70px rgba(0, 0, 0, .55); }
+}
+
+/* waiting for a page: the number rolls up while the page is "fetched" */
+.world.w-teletext[data-tt="fetching"] .w-main > * { display: none; }
+.world.w-teletext[data-tt="fetching"] .w-main::before { content: var(--tt-msg, 'WAITING FOR PAGE'); display: block; min-height: 360px; padding-top: 28px; color: var(--tt-yellow); font-size: 24px; letter-spacing: .08em;
+  }
+.world.w-teletext[data-tt="fetching"] .w-main { animation: none; }
+.world.w-teletext[data-tt="fetching"] .h-tt-page::after { content: ' ' var(--tt-roll, ''); color: var(--tt-yellow); }
+.world.w-teletext[data-tt="fetching"] .h-tt-sub { visibility: hidden; }
+
+/* masthead */
+.w-teletext .h-tt { margin-bottom: 10px; font-family: var(--head-font); }
+.w-teletext .h-tt-row { background: #000; font-size: 23px; padding: 2px 4px; gap: 12px; align-items: center; flex-wrap: wrap; }
+.w-teletext .h-tt-page { color: #fff; min-width: 4.4ch; }
+.w-teletext .h-tt-name { background: var(--tt-blue); color: var(--tt-yellow); padding: 0 12px; text-shadow: none; }
+.w-teletext .h-tt-date { color: var(--tt-cyan); }
+.w-teletext .h-tt-mosaic { height: 24px; margin-top: 2px; background: var(--tt-cyan); -webkit-mask: var(--mosaic) 0 0 / 96px 24px repeat-x; mask: var(--mosaic) 0 0 / 96px 24px repeat-x; }
+.w-teletext .h-tt-title { position: relative; height: 42px; margin-top: 2px; background: var(--tt-blue); overflow: hidden; }
+.w-teletext .h-tt-dh { position: absolute; left: 8px; top: -2px; width: 200%; transform: scaleX(.5); transform-origin: 0 0; font-size: 44px; line-height: 1.02; color: #fff; text-shadow: none; white-space: nowrap; letter-spacing: .04em; }
+.w-teletext .h-tt-sub { position: absolute; right: 8px; top: 7px; padding: 0 8px; font-size: 22px; line-height: 28px; background: #000; color: var(--tt-yellow); text-shadow: none; animation: tt-flash 1.6s steps(1) infinite; }
+.w-teletext .h-tt-blocks { gap: 4px; margin-top: 4px; }
+.w-teletext .h-tt-blk { padding: 0 10px; font-size: 21px; line-height: 28px; text-shadow: none; transition: none; border-bottom: 4px solid rgba(0, 0, 0, .35); }
+.w-teletext .h-tt-blk:hover { filter: none; background-image: linear-gradient(rgba(255, 255, 255, .45), rgba(255, 255, 255, .45)); }
+.w-teletext .h-tt-blk:active { transform: translateY(2px); border-bottom-width: 2px; }
+
+/* videotex: a blue frame, a yellow title bar and keycap menu buttons */
+.v-videotex-1977 .h-tt-row { background: transparent; }
+.v-videotex-1977 .h-tt-page { color: var(--tt-yellow); }
+.v-videotex-1977 .h-tt-name { background: var(--tt-yellow); color: #00006e; }
+.v-videotex-1977 .h-tt-date { color: #9ad7ff; }
+.v-videotex-1977 .h-tt-mosaic { background: var(--tt-yellow); height: 18px; }
+.v-videotex-1977 .h-tt-title { background: transparent; border-bottom: 3px solid var(--tt-yellow); height: 44px; }
+.v-videotex-1977 .h-tt-dh { color: var(--tt-yellow); }
+.v-videotex-1977 .h-tt-sub { background: var(--tt-yellow); color: #00006e; animation: none; }
+.v-videotex-1977 .h-tt-blk { background: #00004a; color: var(--tt-yellow); border: 2px solid var(--tt-yellow); border-bottom-width: 5px; border-radius: 4px; flex: 1 1 110px; }
+.v-videotex-1977 .h-tt-blk::before { content: '\25B8\00a0'; }
+.v-videotex-1977 .h-tt-blk:hover { background-color: var(--tt-yellow); background-image: none; color: #00006e; }
+.v-videotex-1977 .h-tt-blk:active { border-bottom-width: 3px; }
+
+/* page furniture: solid heading bars (teletext) / yellow rules with block bullets (videotex) */
+.w-teletext .m-section-title { display: block; margin: 8px 0 4px; padding: 0 8px; font-size: 22px; line-height: 28px; font-weight: 400; letter-spacing: .06em; border: 0; background: var(--tt-cyan); color: #000; text-shadow: none; }
+.w-teletext .cx-region .m-section:nth-of-type(2n) .m-section-title { background: var(--tt-yellow); }
+.w-teletext .cx-region .m-section:nth-of-type(3n) .m-section-title { background: var(--tt-green); }
+.w-teletext .m-section-head { display: block; }
+.w-teletext .m-section-aside { color: var(--tt-cyan); }
+.v-videotex-1977 .m-section-title { background: transparent; color: var(--tt-yellow); padding: 0 0 2px; border-bottom: 3px dotted var(--tt-yellow); display: flex; align-items: center; gap: 10px; }
+.v-videotex-1977 .m-section-title::before { content: ''; width: 12px; height: 18px; background: var(--tt-yellow); clip-path: polygon(0 100%, 0 45%, 50% 45%, 50% 0, 100% 0, 100% 100%); }
+.v-videotex-1977 .cx-region .m-section:nth-of-type(2n) .m-section-title, .v-videotex-1977 .cx-region .m-section:nth-of-type(3n) .m-section-title { background: transparent; }
+.w-teletext .m-group-title { color: var(--tt-cyan); font-size: 20px; letter-spacing: .08em; border: 0; }
+.v-videotex-1977 .m-group-title { color: #9ad7ff; }
+.w-teletext .m-table { font-size: 21px; }
+.w-teletext .m-table thead th { color: var(--tt-cyan); border-bottom: 2px solid var(--tt-cyan); }
+.v-videotex-1977 .m-table thead th { color: #9ad7ff; border-bottom: 2px dotted var(--tt-yellow); }
+.w-teletext .m-num { color: var(--tt-yellow); }
+.v-videotex-1977 .m-num { color: #fff; }
+.w-teletext .m-quote.is-up .m-quote-chg, .w-teletext .m-up { color: var(--tt-green); }
+.w-teletext .m-quote.is-down .m-quote-chg, .w-teletext .m-down { color: var(--tt-red); }
+.v-videotex-1977 .m-quote.is-up .m-quote-chg { color: #44ff88; } .v-videotex-1977 .m-quote.is-down .m-quote-chg { color: #ff7a7a; }
+.w-teletext .m-table tbody tr:hover { background: #fff; color: #000; }
+.w-teletext .m-table tbody tr:hover .m-num, .w-teletext .m-table tbody tr:hover .m-quote-chg { color: #000; }
+.w-teletext .m-story { padding: 1px 0 1px 20px; position: relative; }
+.w-teletext .m-story::before { content: ''; position: absolute; left: 2px; top: 8px; width: 10px; height: 14px; background: var(--tt-green); clip-path: polygon(0 100%, 0 45%, 50% 45%, 50% 0, 100% 0, 100% 100%); }
+.v-videotex-1977 .m-story::before { background: var(--tt-yellow); }
+.w-teletext .m-story-title { font-size: 21px; font-weight: 400; text-transform: none; letter-spacing: .01em; }
+.w-teletext .m-story:hover .m-story-title { background: #fff; color: #000; text-shadow: none; }
+.w-teletext .m-story-summary { color: #fff; text-transform: none; font-size: 19px; }
+.w-teletext .m-story-meta { color: var(--tt-cyan); font-size: 17px; }
+.v-videotex-1977 .m-story-meta { color: #9ad7ff; }
+.w-teletext .m-lead-title { font-size: 34px; line-height: 1; color: var(--tt-yellow); text-transform: uppercase; letter-spacing: .02em; }
+.w-teletext .m-lead-deck { color: #fff; text-transform: none; font-size: 21px; }
+.w-teletext .m-link { color: var(--tt-cyan); text-decoration: none; }
+.v-videotex-1977 .m-link { color: var(--tt-yellow); }
+.w-teletext .m-link:hover { background: #fff; color: #000; text-decoration: none; text-shadow: none; }
+.w-teletext .m-econ-row, .w-teletext .m-sport-list li, .w-teletext .m-company-list li + li .m-company, .w-teletext .m-culture-list li + li, .w-teletext .m-weather-list li + li { border: 0; }
+.w-teletext .m-econ-value, .w-teletext .m-weather-temp { color: var(--tt-yellow); }
+.v-videotex-1977 .m-econ-value, .v-videotex-1977 .m-weather-temp { color: #fff; }
+.w-teletext .m-company:hover, .w-teletext .m-econ-row:hover { background: #fff; color: #000; }
+.w-teletext .m-company:hover *, .w-teletext .m-econ-row:hover * { color: #000; }
+.w-teletext .m-empty { font-style: normal; color: var(--tt-cyan); }
+.w-teletext .m-empty::before { content: '\25A0 '; color: var(--tt-yellow); }
+.w-teletext .m-loading { color: var(--tt-yellow); font-style: normal; animation: none; }
+.w-teletext .m-loading::after { content: '\2588'; animation: tt-cursor 1s steps(1) infinite; margin-left: 4px; }
+.w-teletext .m-closed { color: var(--tt-cyan); }
+.w-teletext .w-main .m-btn { background: #000; color: #fff; border: 2px solid #fff; border-radius: 0; font: inherit; font-size: 20px; line-height: 1.1; text-transform: uppercase; }
+.w-teletext .w-main .m-btn:hover:not(:disabled) { background: #fff; color: #000; }
+.w-teletext .w-main .m-btn-primary { background: var(--tt-yellow); color: #000; border-color: var(--tt-yellow); }
+.w-teletext .w-main .m-btn-primary:hover:not(:disabled) { background: #fff; border-color: #fff; }
+.v-videotex-1977 .w-main .m-btn { background: #00004a; color: var(--tt-yellow); border-color: var(--tt-yellow); border-radius: 4px; }
+.v-videotex-1977 .w-main .m-btn:hover:not(:disabled) { background: var(--tt-yellow); color: #00006e; }
+.v-videotex-1977 .w-main .m-btn-primary { background: var(--tt-yellow); color: #00006e; }
+.w-teletext .m-search-input { background: #000; color: var(--tt-yellow); border: 2px solid #fff; border-radius: 0; font: inherit; font-size: 21px; text-transform: uppercase; }
+.v-videotex-1977 .m-search-input { background: #00004a; border-color: var(--tt-yellow); }
+.w-teletext .m-result-title { color: var(--tt-cyan); }
+.w-teletext .w-foot { border-top: 0; margin-top: 8px; padding: 30px 0 0; color: var(--tt-cyan); font-size: 15px; position: relative; }
+.w-teletext .w-foot::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 24px; background: var(--tt-cyan); -webkit-mask: var(--mosaic) 0 0 / 96px 24px repeat-x; mask: var(--mosaic) 0 0 / 96px 24px repeat-x; }
+.v-videotex-1977 .w-foot::before { background: var(--tt-yellow); }
+.w-teletext .w-foot a, .w-teletext .m-sources-link { color: var(--tt-yellow); }
+
+/* page 100 / menu: the index of numbered pages */
+.w-teletext .cx-index-title { margin: 6px 0 2px; font-size: 40px; line-height: 1; font-weight: 400; color: var(--tt-yellow); letter-spacing: .06em; }
+.w-teletext .cx-index-date { margin: 0 0 12px; color: var(--tt-cyan); }
+.w-teletext .cx-index ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 4px 28px; }
+.w-teletext .cx-index li { display: block; padding: 2px 0; color: #fff; }
+.w-teletext .cx-index-key { display: inline-block; min-width: 3.4ch; margin-right: 8px; color: var(--tt-yellow); }
+.w-teletext .cx-index .m-link { display: block; width: 100%; padding: 0 4px; margin: 0 -4px; }
+.w-teletext .cx-index .m-link:hover .cx-index-key { color: #000; }
+.w-teletext .cx-index-hint { margin-top: 18px; color: var(--tt-green); text-transform: none; }
+.v-videotex-1977 .cx-index-title { color: var(--tt-yellow); border-bottom: 3px solid var(--tt-yellow); padding-bottom: 6px; }
+.v-videotex-1977 .cx-index-key { min-width: 0; padding: 0 8px; margin-right: 12px; background: #00004a; border: 2px solid var(--tt-yellow); border-bottom-width: 4px; border-radius: 4px; text-align: center; }
+.v-videotex-1977 .cx-index .m-link:hover .cx-index-key { background: #00006e; color: var(--tt-yellow); }
+.v-videotex-1977 .cx-index li { padding: 4px 0; }
+.v-videotex-1977 .cx-index-hint { color: #9ad7ff; }
+
+/* page-selection bar: Fastext keys, page entry, status line */
+.w-teletext .pc-bar { margin: 12px 0 18px; padding: 6px 4px; border: 0; border-top: 3px dotted var(--tt-cyan); background: transparent; font-size: 21px; text-shadow: none; position: relative; z-index: 21; }
+.w-teletext .pc-tt-form label { display: inline-flex; align-items: center; gap: 2px; color: #fff; }
+.w-teletext .pc-tt-form input { background: #000; color: var(--tt-yellow); border: 2px solid #fff; border-radius: 0; padding: 0 4px; font-size: 22px; text-transform: none; }
+.w-teletext .pc-key { border-radius: 0; font-size: 20px; padding: 0 10px; }
+.w-teletext .pc-fast { padding: 0 12px; font-size: 20px; border-bottom: 4px solid rgba(0, 0, 0, .35); transition: none; }
+.w-teletext .pc-fast:hover { background-image: linear-gradient(rgba(255, 255, 255, .45), rgba(255, 255, 255, .45)); }
+.w-teletext .pc-fast:active { transform: translateY(2px); border-bottom-width: 2px; }
+.w-teletext .pc-status { color: var(--tt-cyan); min-width: 22ch; }
+.w-teletext .pc-status::after { content: '\2588'; margin-left: 4px; color: var(--tt-yellow); animation: tt-cursor 1s steps(1) infinite; }
+.pc-prestel { border-top-color: var(--tt-yellow) !important; }
+.pc-prestel .pc-tt-form label { color: var(--tt-yellow); }
+.pc-prestel .pc-tt-form input { background: #00004a; border-color: var(--tt-yellow); }
+.pc-prestel .pc-fast { background: #00004a; color: var(--tt-yellow); border: 2px solid var(--tt-yellow); border-bottom-width: 5px; border-radius: 4px; }
+.pc-prestel .pc-fast:hover { background: var(--tt-yellow); color: #00006e; }
+.pc-prestel .pc-key { background: #00004a; color: var(--tt-yellow); border-color: var(--tt-yellow); border-radius: 4px; }
+.pc-prestel .pc-key:hover { background: var(--tt-yellow); color: #00006e; }
+.pc-prestel .pc-hint { color: #9ad7ff; }
+.pc-prestel .pc-status { color: #fff; }
+@media (max-width: 760px) { .w-teletext .h-tt-row { font-size: 20px; } .w-teletext .h-tt-dh { font-size: 38px; } .w-teletext .h-tt-title { height: 38px; } .w-teletext .pc-bar { gap: 6px 8px; } .w-teletext .pc-hint { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .world.w-teletext, .w-teletext .w-frame, .w-teletext .w-main, .w-teletext .cx-flip { animation: none !important; }
+  .w-teletext .h-tt-sub, .w-teletext .m-loading::after, .w-teletext .pc-status::after { animation: none !important; }
+}

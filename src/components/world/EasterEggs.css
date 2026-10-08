@@ -1,0 +1,14 @@
+.egg-live { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.egg-card {
+  position: fixed; right: 16px; bottom: 16px; z-index: 9000; max-width: min(360px, calc(100vw - 32px));
+  padding: 12px 14px; background: var(--paper, #fff); color: var(--ink, #111); border: 2px solid var(--ink, #111);
+  border-radius: var(--radius, 4px); box-shadow: 4px 4px 0 var(--rule, rgba(0,0,0,.35)); font-family: var(--body-font, serif);
+  font-size: 14px; line-height: 1.4; animation: egg-in .25s ease-out both;
+}
+.egg-title { margin: 0 0 6px; font: 700 15px/1.2 var(--head-font, inherit); color: var(--ink, #111); }
+.egg-art { margin: 0 0 6px; font: 13px/1.15 'Courier New', ui-monospace, monospace; white-space: pre; overflow-x: auto; color: var(--ink, #111); }
+.egg-line { margin: 0 0 6px; white-space: pre-line; }
+.egg-close { margin-top: 4px; cursor: pointer; font: inherit; font-size: 13px; padding: 3px 10px; background: var(--ink, #111); color: var(--paper, #fff); border: 0; border-radius: var(--radius, 2px); }
+.egg-close:focus-visible { outline: 2px solid var(--focus, var(--accent, #0a58ca)); outline-offset: 2px; }
+@keyframes egg-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .egg-card { animation: none; } }

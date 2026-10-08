@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { MONTHS, WEEKDAYS, parts, todayISO, yearOf } from '../../core/dates';
 import { useSim } from '../../state/simulation';
-import { eraFor } from '../../theme/eras';
+import { registryNow } from '../../theme/registryLoader';
 import './portal.css';
 
 const MILESTONES = [2026, 2020, 2015, 2010, 2005, 2000, 1995, 1987, 1980, 1969, 1957, 1945, 1929, 1914, 1900, 1886, 1869, 1850, 1825, 1800];
@@ -57,7 +57,7 @@ export function TimeTravelTransition() {
   if (!travel) return null;
   const p = parts(travel.to);
   const full = `${WEEKDAYS[p.weekday]}, ${MONTHS[p.m - 1]} ${p.d}, ${p.y}`;
-  const era = eraFor(travel.to);
+  const era = registryNow().eraFor(travel.to);
   const age = Math.max(0, Math.min(1, (2026 - toYear) / 110));
   const prog = years.length > 1 ? i / (years.length - 1) : 1;
 

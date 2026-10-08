@@ -5,7 +5,9 @@ import { createGuardedProvider } from '../data/guardedProvider';
 import { createRealProvider } from '../data/realProvider';
 import type { HistoricalDataProvider } from '../data/provider';
 import { HistoricalContextAggregator } from '../data/aggregator';
-import { eraFor } from '../theme/eras';
+import { loadRegistry } from '../theme/registryLoader';
+import { preloadFamily } from '../components/world/frames';
+import { ensureFonts } from '../theme/fonts';
 
 export type View =
   | { name: 'home' }
@@ -77,13 +79,24 @@ const STARTING_CASH = 10_000;
 
 const freshPortfolio = (): Portfolio => ({ startingCash: STARTING_CASH, cash: STARTING_CASH, lots: [], startedAt: null, activity: [] });
 
+/**
+ * DEV-only (`?previewDate=YYYY-MM-DD`, used by the Experience Gallery's iframes): the page boots from a
+ * synthetic session and never reads or writes the real saved one. Dead code in production builds.
+ */
+const PREVIEW_DATE: ISODate | null = import.meta.env.DEV && typeof location !== 'undefined'
+  ? (/^\d{4}-\d{2}-\d{2}$/.test(new URLSearchParams(location.search).get('previewDate') ?? '') ? (new URLSearchParams(location.search).get('previewDate') as ISODate) : null)
+  : null;
+export const PREVIEW_MODE = PREVIEW_DATE !== null;
+
 function loadSaved(): { date: ISODate; portfolio: Portfolio } | null {
+  if (PREVIEW_DATE) return { date: PREVIEW_DATE, portfolio: freshPortfolio() };
   try {
     const raw = localStorage.getItem(STORE_KEY);
     return raw ? JSON.parse(raw) : null;
   } catch { return null; }
 }
 function save(state: { date: ISODate; portfolio: Portfolio } | null) {
+  if (PREVIEW_MODE) return; // previews never touch the real session
   try {
     if (state) localStorage.setItem(STORE_KEY, JSON.stringify(state));
     else localStorage.removeItem(STORE_KEY);
@@ -113,8 +126,14 @@ export function SimulationProvider({ children }: { children: React.ReactNode }) 
     const s = loadSaved();
     const resumed = s && s.date === target && resumeDate === target;
     pendingTarget.current = { date: target, portfolio: resumed ? s!.portfolio : freshPortfolio() };
-    setTravel({ from: null, to: target, direction: 'back' });
-    setPhase('traveling');
+    // load the registry, then start fetching the destination's code and fonts while the transition plays
+    void loadRegistry().then(({ eraFor }) => {
+      const dest = eraFor(target);
+      preloadFamily(dest.family);
+      ensureFonts(dest.exp.typography.fonts);
+      setTravel({ from: null, to: target, direction: 'back' });
+      setPhase('traveling');
+    });
   }, [resumeDate]);
 
   const finishTravel = useCallback(() => {
@@ -256,6 +275,7 @@ export function SimulationProvider({ children }: { children: React.ReactNode }) 
       const fresh = (await provider.getNews(capped, { windowDays: days + 1 })).filter((n) => n.availableAt > from);
       setDigest(fresh.length ? fresh.slice(0, 5) : null);
     }
+    const { eraFor } = await loadRegistry();
     if (eraFor(from).sub !== eraFor(capped).sub) {
       setTravel({ from, to: capped, direction: 'forward' });
       setPhase('traveling');

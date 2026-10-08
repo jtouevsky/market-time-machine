@@ -5,11 +5,11 @@
  * read the active theme; nothing else branches on the year.
  */
 import { MONTHS, WEEKDAYS, parts, type ISODate } from '../core/dates';
+import type { Archetype, ChartStyle, ModuleStyle, TickerStyle, VisualExperience, VisualFamily } from './registry/types';
 
-export type LayoutKind = 'archive' | 'broadsheet' | 'midcentury' | 'broadcast' | 'terminal' | 'directory' | 'portal' | 'web2' | 'mobile' | 'flat' | 'fintech';
-export type ModuleStyle = 'print' | 'terminal' | 'web';
-export type TickerStyle = 'tape' | 'bulletin' | 'crawl' | 'terminal' | 'marquee' | 'glossy' | 'none';
-export type ChartStyle = 'engraved' | 'print' | 'phosphor' | 'pixel' | 'gloss' | 'skeuo' | 'flat' | 'smooth';
+/** The page archetype ("layout kind"). Defined in the registry; re-exported here for existing imports. */
+export type LayoutKind = Archetype;
+export type { ModuleStyle, TickerStyle, ChartStyle };
 
 export interface EraLabels {
   topStories: string; markets: string; indexes: string; commodities: string; rates: string; international: string; digital: string;
@@ -21,8 +21,12 @@ export interface EraLabels {
 }
 
 export interface EraTheme {
-  /** Base layout / information architecture. */
+  /** Page archetype / information architecture. */
   id: LayoutKind;
+  /** Which lazily-loaded code family renders this experience. */
+  family: VisualFamily;
+  /** The full resolved visual experience this theme was derived from. */
+  exp: VisualExperience;
   /** Sub-era within the layout (e.g. 'jazz' within 'broadsheet'). */
   sub: string;
   /** CSS variant class applied as .v-<variant> */
@@ -45,11 +49,11 @@ export interface EraTheme {
   labels: EraLabels;
 }
 
-const longDate = (d: ISODate) => { const p = parts(d); return `${WEEKDAYS[p.weekday]}, ${MONTHS[p.m - 1]} ${p.d}, ${p.y}`; };
-const shortMonth = (d: ISODate) => { const p = parts(d); return `${MONTHS[p.m - 1].slice(0, 3)} ${p.d}, ${p.y}`; };
-const mdy = (d: ISODate, two = true) => { const p = parts(d); return `${p.m}/${p.d}/${two ? String(p.y).slice(2) : p.y}`; };
+export const longDate = (d: ISODate) => { const p = parts(d); return `${WEEKDAYS[p.weekday]}, ${MONTHS[p.m - 1]} ${p.d}, ${p.y}`; };
+export const shortMonth = (d: ISODate) => { const p = parts(d); return `${MONTHS[p.m - 1].slice(0, 3)} ${p.d}, ${p.y}`; };
+export const mdy = (d: ISODate, two = true) => { const p = parts(d); return `${p.m}/${p.d}/${two ? String(p.y).slice(2) : p.y}`; };
 
-const PRINT_LABELS: EraLabels = {
+export const PRINT_LABELS: EraLabels = {
   topStories: 'Latest News', markets: 'The Stock Market', indexes: 'Averages', commodities: 'Commodities', rates: 'Money',
   international: 'Foreign Markets', digital: '', headlines: 'News of the Day', movers: 'Most Active Issues', companiesInNews: 'Corporations in the News',
   economy: 'Business Conditions', sports: 'Sports', culture: 'Amusements', weather: 'The Weather', advert: 'Advertisement',
@@ -62,7 +66,8 @@ const PRINT_LABELS: EraLabels = {
   between: 'Events in the interval', marketCap: 'Market value of shares', companies: 'Listed Corporations',
 };
 
-export const ERAS: EraTheme[] = [
+export type BaseTheme = Omit<EraTheme, 'family' | 'exp'>;
+export const ERAS: BaseTheme[] = [
   {
     id: 'archive', sub: 'archive', variant: 'archive', name: 'The Gilded Archive', from: '1800-01-01', to: '1899-12-31', module: 'print', ticker: 'none', chart: 'engraved',
     publication: 'The Mercantile Times', motto: 'Commerce, Finance, and the Intelligence of the Day', headlineCase: 'upper', fractions: true, price: 'FOUR CENTS',
@@ -187,44 +192,3 @@ export const ERAS: EraTheme[] = [
   },
 ];
 
-/**
- * Twenty sub-eras on top of eleven information architectures. A sub-era changes the period
- * details (paper name, price, palette, typography, wording) via its variant class and overrides;
- * the base layout decides the page structure, navigation and interaction model.
- */
-interface SubEra { sub: string; base: LayoutKind; from: ISODate; to: ISODate; name: string; over?: Partial<EraTheme>; labels?: Partial<EraLabels> }
-export const SUB_ERAS: SubEra[] = [
-  { sub: 'colonial', base: 'archive', from: '1000-01-01', to: '1799-12-31', name: 'Colonial Gazette',
-    over: { publication: 'The Mercantile Gazette', motto: 'Containing the Freshest Advices, Foreign and Domestick', price: 'SIX PENCE' } },
-  { sub: 'antebellum', base: 'archive', from: '1800-01-01', to: '1849-12-31', name: 'Commercial Advertiser',
-    over: { publication: 'The Commercial Advertiser', motto: 'Shipping News, Prices Current, and the Intelligence of the Day', price: 'SIX CENTS' } },
-  { sub: 'gilded', base: 'archive', from: '1850-01-01', to: '1899-12-31', name: 'The Gilded Age' },
-  { sub: 'progressive', base: 'broadsheet', from: '1900-01-01', to: '1918-12-31', name: 'Progressive Era', over: { price: 'ONE CENT', ticker: 'none' } },
-  { sub: 'jazz', base: 'broadsheet', from: '1919-01-01', to: '1929-12-31', name: 'The Jazz Age', over: { price: 'TWO CENTS' } },
-  { sub: 'depression', base: 'broadsheet', from: '1930-01-01', to: '1945-12-31', name: 'Depression & War', over: { price: 'THREE CENTS' } },
-  { sub: 'postwar', base: 'midcentury', from: '1946-01-01', to: '1959-12-31', name: 'Postwar Boom' },
-  { sub: 'sixties', base: 'broadcast', from: '1960-01-01', to: '1969-12-31', name: 'The Sixties' },
-  { sub: 'seventies', base: 'broadcast', from: '1970-01-01', to: '1979-12-31', name: 'The Seventies', over: { motto: 'Eyewitness Business Report', price: '20¢' } },
-  { sub: 'amber', base: 'terminal', from: '1980-01-01', to: '1989-12-31', name: 'Amber Terminal' },
-  { sub: 'green', base: 'terminal', from: '1990-01-01', to: '1994-12-31', name: 'Online Service', over: { publication: 'MTM ONLINE FINANCIAL SERVICE', motto: 'V5.1' } },
-  { sub: 'earlyweb', base: 'directory', from: '1995-01-01', to: '1998-12-31', name: 'The Early Web' },
-  { sub: 'dotcom', base: 'portal', from: '1999-01-01', to: '2002-12-31', name: 'Dot-com Portal' },
-  { sub: 'web2', base: 'web2', from: '2003-01-01', to: '2006-12-31', name: 'Web 2.0' },
-  { sub: 'glossy', base: 'web2', from: '2007-01-01', to: '2009-12-31', name: 'Glossy Web' },
-  { sub: 'skeuo', base: 'mobile', from: '2010-01-01', to: '2012-12-31', name: 'Skeuomorphic Apps' },
-  { sub: 'flat15', base: 'flat', from: '2013-01-01', to: '2015-12-31', name: 'Flat Design', over: { publication: 'markettime' } },
-  { sub: 'cards', base: 'flat', from: '2016-01-01', to: '2018-12-31', name: 'Material Cards' },
-  { sub: 'neo', base: 'fintech', from: '2019-01-01', to: '2021-12-31', name: 'Neo-Fintech' },
-  { sub: 'fintech', base: 'fintech', from: '2022-01-01', to: '2999-12-31', name: 'Present Day' },
-];
-
-const memo = new Map<string, EraTheme>();
-export function eraFor(date: ISODate): EraTheme {
-  const se = SUB_ERAS.find((e) => date >= e.from && date <= e.to) ?? SUB_ERAS[SUB_ERAS.length - 1];
-  const hit = memo.get(se.sub);
-  if (hit) return hit;
-  const base = ERAS.find((e) => e.id === se.base)!;
-  const theme: EraTheme = { ...base, ...se.over, sub: se.sub, variant: se.sub, name: se.name, from: se.from, to: se.to, labels: { ...base.labels, ...se.labels } };
-  memo.set(se.sub, theme);
-  return theme;
-}

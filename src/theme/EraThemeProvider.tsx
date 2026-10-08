@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useEffect, useMemo } from 'react';
 import type { ISODate } from '../core/dates';
-import { eraFor, type EraTheme } from './eras';
+import { type EraTheme } from './eras';
+import { ensureFonts } from './fonts';
+import { eraFor } from './registry';
 
 const EraContext = createContext<EraTheme | null>(null);
 
@@ -11,6 +13,7 @@ export function EraThemeProvider({ date, children }: { date: ISODate; children: 
     document.documentElement.dataset.era = theme.id;
     return () => { delete document.documentElement.dataset.era; };
   }, [theme.id]);
+  useEffect(() => { ensureFonts(theme.exp.typography.fonts); }, [theme.exp]);
   return <EraContext.Provider value={theme}>{children}</EraContext.Provider>;
 }
 

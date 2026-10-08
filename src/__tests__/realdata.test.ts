@@ -10,7 +10,7 @@ import { setDataReader } from '../data/real/loader';
 import { createRealProvider } from '../data/realProvider';
 import { createGuardedProvider } from '../data/guardedProvider';
 import { HistoricalContextAggregator } from '../data/aggregator';
-import { eraFor } from '../theme/eras';
+import { eraFor } from '../theme/registry';
 
 const DATA = join(__dirname, '../../public/data');
 const HAVE_DATA = existsSync(join(DATA, 'markets/securities.json'));
